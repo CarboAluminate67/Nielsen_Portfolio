@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - What's in a Name"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Alex Nielsen"
 format:
   html:
     self-contained: true
@@ -25,4 +25,167 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+import plotly.express as px
+```
+
+
+## Elevator pitch
+
+In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.
+
+```{python}
+#| label: project data
+#| code-summary: Read and format project data
+# Include and execute your code here
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+```
+
+## Personal Name Historical Use
+
+The following data shows the use of my name 'Alexander' within the last ~100 years. Plainly seen in the following chart, which shows the number of children given the name every year between 1910 and 2015, there is a drastic spike upward beginning in the 1980s, and stabalizing since the mid-90s. before 1980, the usage of the name was quite stable with around 500-1000 babies named 'Alexander' each year. It grew rapidly over 15 years and over the last 2 decades there have been about 14-16k new 'Alexanders' every year.
+
+The subsequent table supports the chart with a narrower scope. The table displays the number of children named 'Alexander' every 10 years with 3 levels of specificity: children in NC, my home state, in ID, the home of BYUI, and total in the U.S. In the table we can see far more 'Alexanders' in NC than ID, and both states follow the trendline sharp increase in the last ~40 years. 
+
+```{python}
+#| label: Q1
+#| code-summary: Read and format data
+# Data formatting code
+alexander = df[(df.name == 'Alexander')]
+```
+
+
+```{python}
+#| label: Q1 chart
+#| code-summary: personal name plot
+#| fig-cap: "Alexander increases overtime"
+#| fig-align: center
+# Plotting line chart 
+chart = px.line(alexander,
+    x="year", 
+    y="Total"
+)
+chart.show()
+```
+
+
+```{python}
+#| label: Q1 table
+#| code-summary: Alexander table
+#| tbl-cap: "Alexander over the years"
+#| tbl-cap-location: top
+# Name table
+mydat = alexander[(alexander.year%10 == 0)]\
+    .groupby('year')\
+    .sum()\
+    .reset_index()\
+    .tail(10)\
+    .filter(["year", "NC", "ID", "Total"])
+
+display(mydat)
+
+```
+
+
+## Age of Brittany
+
+If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?
+
+The following bar chart displays the age density of people named Brittany, showing a normal distribution with a central tendency of 34 years old. Given the histogram I would guess that anyone named brittany would be between 24 and 40 years old. Sequentially, I would not guess any ages younger or older than that range. 
+
+```{python}
+#| label: Q2
+#| code-summary: Read and format data
+# Filtering for brittany
+brit = df.query('name == "Brittany"')
+brit['age'] = 2024-brit['year']
+sumTotal = sum(brit['Total'])
+brit['density'] = brit['Total']/sumTotal
+```
+
+```{python}
+#| label: Q2 chart
+#| code-summary: Brittany age bar
+#| fig-cap: "Age chart of Brittanys"
+#| fig-align: center
+# Charting ages of Brittany
+
+britChart = px.bar(brit,
+    x='age',
+    y='density')
+britChart.show()
+```
+
+
+## Christian Name Trends
+
+The given line graph shows the rise and fall of Christian names over the last century. At the turn of the 20th century, Christian names significantly rose in popularity, with spikes that continued to climb until around the 1950s. After the mid-50s however began a sudden and sharp decline in christian names, which is leveling at an all time low, approaching only small handfuls of names in the early 21st century. 
+
+The following table compares the number of christian names, specifically Mary, each decade in 3 states: UT, a predominantly Christian state, NC, my home state, and CA, a hub of cultures both foreign and domestic. Despite the cultural differences in each state, all 3 shared very close trends in the use of name Mary, neither seemingly favoring the name over another. 
+
+```{python}
+#| label: Christian data
+#| code-summary: Read and format data
+# Filtering for 4 Christian names
+christian = df.query('name == "Mary" or name == "Martha" or name == "Peter" or name == "Paul"')
+christian['decade'] = christian['year'] - christian['year']%10
+```
+
+```{python}
+#| label: Christian Name Line Plot
+#| code-summary: line plot for naming trends
+#| fig-cap: "Christian Names Over Time"
+#| fig-align: center
+# Line Plot to explain christian name trends
+christChart = px.line(christian,
+    x='year',
+    y='Total',
+    color='name')
+christChart.show()
+```
+
+
+```{python}
+#| label: Mary Table
+#| code-summary: table of decade-based naming
+#| tbl-cap: "The Name Mary Over Time"
+#| tbl-cap-location: top
+# table of decade-based naming
+mydat = christian.head(1000)\
+    .groupby('decade')\
+    .sum()\
+    .reset_index()\
+    .head(20)\
+    .filter(["decade", "UT", "NC", "CA", "Mary"])
+
+display(mydat)
+
+```
+
+
+## Film Effect on Names
+
+The graph below shows the use of the name 'Luke' overtime, which can be compared to the release date of the famous "Star Wars" films. The very first Star Wars was released in 1977, and the original trilogy continued through 1983. Since then several more films were made between 2001 and 2019. We can see immediately into the late 70s, when the world-wide popular movies was released, there was a sharp increase in the number of children named luke, and continued to rise into the 21st century. However, while it seems fitting that the Star Wars films would cause such a cultural naming shift, I believe other circumstances contributed to the increase. It is clear that movies can have an impact on the names that parents give to children, but this perhaps not to the degree that this chart portrays. 
+
+```{python}
+#| label: Q4
+#| code-summary: Read and format data
+# Include and execute your code here
+luke = df.query('name == "Luke"')
+```
+
+```{python}
+#| label: Luke Name Line Plot
+#| code-summary: line plot for naming trends
+#| fig-cap: "Luke After Star Wars"
+#| fig-align: center
+# Line Plot to explore Luke after Star Wars
+lukeChart = px.line(luke,
+    x='year',
+    y='Total')
+lukeChart.show()
+```
