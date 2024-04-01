@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - Late Flights"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Alex Nielsen"
 format:
   html:
     self-contained: true
@@ -25,4 +25,182 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+import plotly.express as px
+```
+
+
+## Elevator pitch
+  The following analysis focuses on delays experienced by seven different U.S. airports. Major factors that influence delays include location, weather, and time of the year. It is clear to see that certain airport experience more delays than others, and certain airports experience longer delays. I made geographical inferences about airports based on the data behin their latencies. 
+
+```{python}
+#| label: project data
+#| code-summary: Read project data
+# Initializing pandas dataframe
+data = "https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json"
+df = pd.read_json(data)
+```
+
+__Highlight the Questions and Tasks__
+
+## Tidying data
+
+__Fix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”)__
+
+The following formatting code fixes missing values in the dataframe in two ways. First, there are several observations with a missing airport name, so this re-maps all airport_codes to a certain name in order to fill in this missing data.   
+Next, it replaces the many "-999" values with "NaN" using a mapped lambda function in order to unify missing values and make it easier to read. In the table below you can see that observation 0 has an 'NaN' value under 'num_of_delays_late_aircraft', which used to be '-999'. Additionally observation 2 used to be missing the airport name, but my code automatically filled it in using the airport_code.
+
+```{python}
+#| label: Q1
+#| code-summary: Re-format data
+# Data tidying by cleaning null values
+map_airport = {
+    "ATL": "Atlanta, GA: Hartsfield-Jackson Atlanta International",
+    "DEN": "Denver, CO: Denver International",
+    "IAD": "Washington, DC: Dulle International",
+    "ORD": "Chicago, IL: Chicago O'Hare International",
+    "SAN": "San Diego, CA: San Diego International",
+    "SFO": "San Francisco, CA: San Francisco International",
+    "SLC": "Salt Lake City, UT: Salt Lake City International"
+}
+null_map = lambda x: "NaN" if x == -999 else x
+df['airport_name'] = df['airport_code'].map(map_airport)
+df = df.map(null_map)
+
+```
+
+```{python}
+#| label: Q1 table
+#| code-summary: tidy data
+#| tbl-cap: "Showing Null Values"
+#| tbl-cap-location: top
+# Table to display NaN values
+display(df.head(3))
+
+```
+
+
+## Worst Airport
+
+__Which airport has the worst delays?__
+
+A question able to be answered simply by the bar chart displayed below. It is clear to see that Orlando had the most delays out of the given airports, closely followed by Atlanta. These two airports are far more prone to significant delay than any other airport. I used the simple metric of total delay in minutes. While other airports may experience more delays, they are likely far more minor, such as 30 minutes long, whereas these could be trip-ending delays.   This could be due to their size and pure traffic, among other factors such as location, weather, etc. I expect the heavy amount of hurricane type weather experienced in these two locations contributed significantly to larger delays. This is supported further by the table, which shows that Orlando has the longest average delay of 1.13 hours. This being said, the table also shows San Francisco actually has the highest density of delays relative to the amount of air traffic it handles, with Orlando being the next worst. 
+
+```{python}
+#| label: Q2
+#| code-summary: Formatting data
+# Delay info on each airport
+delays = df[['airport_code', 'minutes_delayed_total', 'num_of_flights_total', 'num_of_delays_total']].groupby('airport_code')
+sum_delays = pd.DataFrame(delays.minutes_delayed_total.sum())
+sum_delays['total_flights'] = delays.num_of_flights_total.sum()
+sum_delays['total_delays'] = delays.num_of_delays_total.sum()
+sum_delays['delay_rate'] = round(sum_delays['total_delays']/sum_delays['total_flights'], 2)
+sum_delays['average_delay'] = round((sum_delays['minutes_delayed_total']/60)/sum_delays['total_delays'], 2)
+```
+
+```{python}
+#| label: Q2 chart
+#| code-summary: bar chart of delays
+#| fig-cap: "Worst Airport"
+#| fig-align: center
+# Bar chart to display which airport has the worst delays
+px.bar(sum_delays['minutes_delayed_total'], labels={"value": 'Total Delay in Minutes', "airport_code": 'Airport'}).update_traces(showlegend=False) 
+```
+
+
+```{python}
+#| label: Q2 table
+#| code-summary: Delay table
+#| tbl-cap: "Airport Delays"
+#| tbl-cap-location: top
+# Delay info for airports
+delayData = sum_delays\
+    .groupby('airport_code')\
+    .sum()\
+    .reset_index()\
+    .head(20)\
+    .filter(["airport_code", "total_flights", "total_delays", "delay_rate", "average_delay"])
+display(delayData)
+```
+
+## Best Month
+
+__What is the best month to fly if you want to avoid delays of any length?__
+
+The following bar chart gives a clear cut answer that November is surprisingly the best month to avoid any delays whatsoever. Notice however that the amount of delay is measured in number of delays, not by the total loss of time. This means that while other months have more delays, they may be less severe. 
+
+```{python}
+#| label: Q3
+#| code-summary: Read and format data
+# Grouping by month
+month = df[['airport_code', 'month', 'num_of_delays_total']]
+monthSum = month.groupby('month').num_of_delays_total.sum().drop('n/a')
+```
+
+```{python}
+#| label: Q3 chart
+#| code-summary: bar chart of travel months
+#| fig-cap: "Best Month"
+#| fig-align: center
+# Bar chart to display which months have most delays
+px.bar(monthSum, labels={'month': 'Month', 'value': 'Number of Delays'}).update_layout(xaxis={'categoryorder':'total descending'}).update_traces(showlegend=False, marker_color='yellowgreen') 
+```
+
+## Weather Delays
+
+__Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild)__
+
+The re-formatted data below makes two significant changes. It replaces null values under delays caused by late aircraft with the average for this column. Next it creates a new column, which is the total number of weather related delays. The original weather column only includes major weather delays, however this column accounts for all delays big and small, by taking delays from the 'late aircraft' and 'nas' categories. 
+
+```{python}
+#| label: Q4
+#| code-summary: Formatting data
+# Re-calculated Weather Delays
+df['num_of_delays_late_aircraft'] = df['num_of_delays_late_aircraft'].map(lambda x: 1061 if x == 'NaN' else x)
+df.head(5)
+month_map = {
+  'January': .65,
+  'Febuary': .65,
+  'March': .65,
+  'April': .4,
+  'May': .4,
+  'June': .4,
+  'July': .4,
+  'August': .4,
+  'September': .65,
+  'October': .65,
+  'November': .65,
+  'December': .65
+}
+df['month_multiplier'] = df['month'].map(month_map)
+df['total_weather'] = round(df['num_of_delays_weather'] + .3*df['num_of_delays_late_aircraft'] + df['month_multiplier']*df['num_of_delays_nas'])
+df.head(5)
+```
+
+## Worst Weather
+
+__Using the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport.__
+
+The bar chart shown displays the proportion of total flights from an airport that were delayed for any weather reasons, major and minor. As hypothesized above, Orlando has a very high proportion of flights delayed by weather, but it is still topped by San Francisco. Salt Lake City has the smallest proportion of weather related delays, likely due to its far inland location without any severe weather conditions apart from snow in the winter time. 
+
+```{python}
+#| label: Q5
+#| code-summary: Read and format data
+# Weather Delays per airport
+weather = df[['airport_code', 'num_of_flights_total', 'total_weather']]
+weather = weather.groupby('airport_code').agg({'num_of_flights_total':sum, 'total_weather':sum})
+weather['proportion'] = weather['total_weather']*100/weather['num_of_flights_total']
+```
+
+```{python}
+#| label: Q5 chart
+#| code-summary: bar chart of weather delays
+#| fig-cap: "Worst Weather"
+#| fig-align: center
+# Bar chart to display which airports have most weather related delays
+px.bar(weather['proportion'], labels={"value": 'Percent Delayed By Weather', "airport_code": 'Airport'}).update_traces(showlegend=False, marker_color='slategrey')
+```
