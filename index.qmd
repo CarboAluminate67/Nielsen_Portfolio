@@ -1,51 +1,16 @@
 ---
 layout: cv
-title: Alex Nielsen's Resume
+title: Alex Nielsen - About Me
 ---
-# Alex Nielsen
-Enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field.
+I am an enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field.
 
-<div id="webaddress">
-| <a href="www.linkedin.com/in/alex-nielsen-48a969278">LinkedIn</a>
-| <a href="https://github.com/CarboAluminate67/">GitHub</a> |
-</div>
+## Computer Science
+Since my early education I have been excited about computers; working on them, learning to talk to them, and creating programs that perform legitimately useful fucntions. I have always sought to learn new skills and information, delving deeper into the wide and complicated world of computer science. There is always more to learn, and my curiosity never ends. Since my first 'Hello World' program in Lua when I was in the 6th grade, my interest in the industry has only snowballed. In particular, I care about the bare bones function of these magic machines: I like to be in the back end, writing scripts to analyze data, do complex math, or perform server side functions. That said, I am always happy when I'm writing code, whether it is python or html.    
 
-<!-- https://www.monique.tech/the-art-of-markdown -->
+I am particularly intrigued by data science: manipulating dataframes to find and visualize discrete relationships, that shine on unpredicted correlations. As well as the fascinating world of machine learning; Countless model frameworks for classification, regression, content generation, etc. I love learning how these algorithms work, at a very low level of the very math behind a computer's ability to learn. 
 
-## Education
-
-`Expected December 2024`
-__Brigham Young University - Idaho__, Rexburg, ID
--	Data Science Emphasis
--	3.93 GPA
-
-## Related Experience
-
-### Science Olympiad Competitor
-
-`September 2018 - June 2021`
-__Atkins High School__, Winston-Salem, NC
-
-- Participated in statewide competitions for all STEM fields.
-- Used programming knowledge and Agile development to create winning Arduino devices.
-- Applied the engineering process to design and test working model airplanes and rockets.
-- Collaborated with teammates to solve engineering problems and create innovative technical solutions.
-
-### Shift Manager
-
-`October 2021 - Present`
-__Five Guys LLC__, Winston-Salem, NC
-
-- Delegated tasks and supervised productivity, performance, and cooperation.
-- Prepared shipment orders and monitored sales data.
-- Provided personalized service and addressed internal and external conflicts.
-- Maintained hardware with attention to detail.
-- Led daily shift meetings to communicate items of interest to staff.
-
-## References
- - Joseph Patterson: Current Supervisor: General Manager, Five Guys
- - Marie Shepard: Friend: Contract Safety Manager, NASA
- - Carl Champagne: Friend: Chief Master Seargent, U.S. Air Force
+## Aerospace
+Most of my passion lies in the aerospace industry, in particular, the subset of spaceflight and rocketry. I simply cannot begin to describe my fascination for the science behind rocket propulsion, and space exploration. I endeavor to someday use my skills in computer science, and passion for the field, to further develop our knowledge in spaceflight, and rocket engines. You will notice that a large majority of my own projects, both personal and in school, are related in some way to space exploration.
 
 <!-- ### Footer
 
