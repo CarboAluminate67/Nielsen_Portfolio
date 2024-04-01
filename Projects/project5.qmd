@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - The War with Star Wars"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Alex Nielsen"
 format:
   html:
     self-contained: true
@@ -25,4 +25,194 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+import plotly.express as px
+```
+
+
+## Elevator pitch
+
+In this analysis on survey data collected about Star Wars, we explore the construction and use of survey-based data, and its potential in machine learning. I used various techniques to properly engineer the dataset, gain interesting insights, and discover its effectiveness in a GBDT machine learning model. 
+
+```{python}
+#| label: project-data
+#| code-summary: Read and format project data
+
+# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
+
+# Include and execute your code here
+df = pd.read_csv("StarWars.csv")
+```
+
+## Column Cleaning
+
+__Shorten the column names and clean them up for easier use with pandas. Provide a table or list that exemplifies how you fixed the names.__
+
+The following lists shown below are the old column names directly for the survey, and the clean renamed column names respectively. We can see just by simply renaming the columns of the dataset, it is already much smaller and far more understandeable. 
+
+```{python}
+#| label: Q1
+#| code-summary: Read and format data
+clean_df = df.rename(columns={
+  'RespondentID': 'ID',
+  'Have you seen any of the 6 films in the Star Wars franchise?': 'watched_star_wars',
+  'Do you consider yourself to be a fan of the Star Wars film franchise?': 'fan',
+  'Which of the following Star Wars films have you seen? Please select all that apply.': 'phantom',
+  'Unnamed: 4': 'clones',
+  'Unnamed: 5': 'revenge',
+  'Unnamed: 6': 'hope',
+  'Unnamed: 7': 'empire',
+  'Unnamed: 8': 'jedi',
+  'Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.': 'first',
+  'Unnamed: 10': 'second',
+  'Unnamed: 11': 'third',
+  'Unnamed: 12': 'fourth',
+  'Unnamed: 13': 'fifth',
+  'Unnamed: 14': 'sixth',
+  'Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.': 'han',
+  'Unnamed: 16': 'luke',
+  'Unnamed: 17': 'leia',
+  'Unnamed: 18': 'anakin',
+  'Unnamed: 19': 'obiwan',
+  'Unnamed: 20': 'palpatine',
+  'Unnamed: 21': 'vader',
+  'Unnamed: 22': 'lando',
+  'Unnamed: 23': 'boba',
+  'Unnamed: 24': 'c3p0',
+  'Unnamed: 25': 'r2d2',
+  'Unnamed: 26': 'jar',
+  'Unnamed: 27': 'padme',
+  'Unnamed: 28': 'yoda',
+  'Which character shot first?': 'solo_shot',
+  'Are you familiar with the Expanded Universe?': 'expanded',
+  'Do you consider yourself to be a fan of the Expanded Universe?Œæ': 'expanded_fan',
+  'Do you consider yourself to be a fan of the Star Trek franchise?': 'star_trek',
+  'Gender': 'gender',
+  'Age': 'age',
+  'Household Income': 'income',
+  'Education': 'education',
+  'Location (Census Region)': 'location'
+  }).drop([0])
+```
+
+
+```{python}
+#| label: Q1-column-names
+#| code-summary: Renamed columns
+#| fig-cap: "Old Vs New Columns"
+#| fig-align: center
+print(list(df.columns))
+print(list(clean_df.columns))
+
+males = clean_df.loc[clean_df['gender'] == 'Male']
+males.watched_star_wars.value_counts()
+```
+
+## Data Cleaning
+
+__Clean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made__
+
+This is where much of the magic happens in this project; The first dataframe is the original, unaltered data from the server. Following is the fully engineered dataframe that the machine learning model uses as input. After the columns were renamed, I replaced all yes/no, true/false, etc. values with simple 1s and 0s. I also remapped categorical with an order, such as age, with integers to represent a given range. Finally, with the remaining, unordered categorical features, I used one-hot encoding. The result is a dataframe that a machine learning model can easily understand, interpret, and is compatible with the model's math. 
+
+```{python}
+#| label: Q2
+#| code-summary: Read and format data
+# Include and execute your code here
+clean_df.replace(('Yes', 'Star Wars: Episode I  The Phantom Menace', 'Star Wars: Episode II  Attack of the Clones', 'Star Wars: Episode III  Revenge of the Sith', 'Star Wars: Episode IV  A New Hope', 'Star Wars: Episode V The Empire Strikes Back', 'Star Wars: Episode VI Return of the Jedi'), (1), inplace=True)
+
+clean_df.replace(('Very favorably', 'Somewhat favorably', 'Neither favorably nor unfavorably (neutral)', 'Somewhat unfavorably', 'Very unfavorably', 'Unfamiliar (N/A)'), (5, 4, 3, 2, 1, 0), inplace=True)
+
+clean_df.replace('No', 0, inplace=True)
+clean_df.age = clean_df.age.map({'0': 0, '18-29': 1, '30-44': 2, '45-60': 3, '> 60': 4})
+clean_df.education = clean_df.education.map({'Less than hih school degree': 1, 'High school degree': 2, 'Some college or Associate degree': 3, 'Bachelor degree': 4, 'Graduate degree': 5})
+
+target_df = clean_df
+target_df.income = clean_df.income.map({'$0 - $24,999': 0, '$25,000 - $49,999': 0, '$50,000 - $99,999': 1, '$100,000 - $149,999': 1, '$150,000+': 1})
+
+target_df = target_df.fillna(0)
+
+filtered_df = target_df[clean_df['watched_star_wars'] == 1].drop('watched_star_wars', axis=1)
+
+final_df = pd.get_dummies(filtered_df, columns=['solo_shot', 'location', 'gender'])
+
+index = final_df[(final_df['solo_shot_0'] == 1) | (final_df['location_0'] == 1) | (final_df['gender_0'] == 1)].index
+final_df.drop(index, inplace=True)
+final_df.drop(['gender_0', 'location_0', 'solo_shot_0'], axis=1, inplace=True)
+
+final_df.replace((False, True), (0, 1), inplace=True)
+```
+
+```{python}
+#| label: Q2-dfs
+#| code-summary: Engineered Dataframe
+#| fig-cap: "Old Vs New DF"
+#| fig-align: center
+
+display(df.head(5))
+display(final_df.head(5))
+
+```
+
+## Data Validation
+
+__Validate that the data provided on GtHub lines up with the article by recreating 2 of the visuals from the article__
+
+Below are 2 visuals, recreated from an article detailing the popularity and demographic info behind starwars. From the first, we get a percentage showing how many (of 818 respondants) have seen each movie. We can see 'The Empire Strikes Back' is the most viewed movie, with a 91% viewage rate. In contrast, 'Revenge of The Sith' has the lowest at 66%.
+
+The chart afterwards is a visual of the famous 'Who Shot First' controversy, which pertains to a change in the originali film in which Han Solo no longer 'shoots first.' We can see that 39% of the respondants believed Han shot first, while 24% said Greedo. Meanwhile, 37% of respondants did not know about the controversy. 
+
+```{python}
+#| label: Q3
+#| code-summary: Read and format data
+# Include and execute your code here
+viewed_movies = final_df[['phantom', 'clones', 'revenge', 'hope', 'empire', 'jedi']]
+movies_sum = pd.DataFrame(viewed_movies.sum(axis=0)).reset_index()
+movies_sum['percent'] = round(movies_sum[0]/818, 4)*100
+
+who_shot = pd.DataFrame(filtered_df['solo_shot'].value_counts()).reset_index().drop([3])
+who_shot
+who_shot['percent'] = round(who_shot['count']/818, 4)*100
+```
+
+```{python}
+#| label: Q3-chart-1
+#| code-summary: movies seen plot
+#| fig-cap: "Movies seen"
+#| fig-align: center
+px.bar(movies_sum, x='index', y='percent', title='Movie Viewage Rate').show()
+```
+
+```{python}
+#| label: Q3-chart-2
+#| code-summary: who shot plot
+#| fig-cap: "Who Shot First"
+#| fig-align: center
+px.bar(who_shot, x='solo_shot', y='percent', title='Who Shot First?').show()
+```
+
+## Machine Learning
+
+__Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy__
+
+In the code below I created a Gradient Boosted Decision Tree classifier model to predict if a person makes at least 50k per year given their responses to the star wars survey. After some tweaking and testing other models, the best accuracy achieved was about 64%. Naturally, this is not very high, but it is about what I had expected; First the survey format was not very good data to be used in machine learning, and it took a great deal of tailoring and formatting to work properly. Second, the data is far too small: less than 1000 people were surveyed, and after filtering and fixing the data, only 818 people were left as input. This leaves just over 100 'test' cases, which is not enough to accurately train or test the model properly. One parameter that did make a significant difference, was the learning rate. Because of the small size of the dataset, increasing the learning rate from .1 to .2 increased the accuracy by about 10%. Even so, this model is only accuracy about 2/3s of the time. 
+
+```{python}
+#| label: Q4
+#| code-summary: Machine Learning Model
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn import metrics
+
+X_train, X_test, y_train, y_test = train_test_split(final_df.drop('income', axis=1), final_df['income'], test_size=.2, random_state=42)
+
+clf = GradientBoostingClassifier(learning_rate=.2)
+clf.fit(X_train, y_train)
+
+pred = clf.predict(X_test)
+print(f'Accuracy Score: {round(metrics.accuracy_score(y_test, pred), 4)*100}%')
+metrics.confusion_matrix(y_test, pred)
+```
