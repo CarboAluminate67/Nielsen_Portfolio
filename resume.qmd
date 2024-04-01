@@ -1,89 +1,57 @@
 ---
 layout: cv
-title: Isaac Newtons's CV
+title: Alex Nielsen's Resume
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+# Alex Nielsen
+Enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field.
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+| <a href="www.linkedin.com/in/alex-nielsen-48a969278">LinkedIn</a>
+| <a href="https://github.com/CarboAluminate67/">GitHub</a> |
 </div>
 
-
-## Currently
-
-Standing on the shoulders of giants
-
-### Specialized in
-
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
-
-
-### Research interests
-
-Cooling, power series, optics, alchemy, planetary motions, apples.
-
+<!-- https://www.monique.tech/the-art-of-markdown -->
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+`Expected December 2024`
+__Brigham Young University - Idaho__, Rexburg, ID
+-	Data Science Emphasis
+-	3.93 GPA
 
-`June 1661 - now`
-__Trinity College, Cambridge__
+## Related Experience
 
-- Sizar
+### Science Olympiad Competitor
 
-`1667 - death`
-__Trinity College, Cambridge__
+`September 2018 - June 2021`
+__Atkins High School__, Winston-Salem, NC
 
-- Fellow
+- Participated in statewide competitions for all STEM fields.
+- Used programming knowledge and Agile development to create winning Arduino devices.
+- Applied the engineering process to design and test working model airplanes and rockets.
+- Collaborated with teammates to solve engineering problems and create innovative technical solutions.
 
+### Shift Manager
 
+`October 2021 - Present`
+__Five Guys LLC__, Winston-Salem, NC
 
-## Awards
+- Delegated tasks and supervised productivity, performance, and cooperation.
+- Prepared shipment orders and monitored sales data.
+- Provided personalized service and addressed internal and external conflicts.
+- Maintained hardware with attention to detail.
+- Led daily shift meetings to communicate items of interest to staff.
 
-`2012`
-President, *Royal Society*, London, UK
+## References
+ - Joseph Patterson: Current Supervisor: General Manager, Five Guys
+ - Marie Shepard: Friend: Contract Safety Manager, NASA
+ - Carl Champagne: Friend: Chief Master Seargent, U.S. Air Force
 
-Associate, *French Academy of Science*, Paris, France
+<!-- ### Footer
 
-
-
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
-
-
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
+Last updated: April 2024 -->
 
 
 <!-- ### Footer
 
-Last updated: May 2013 -->
+Last updated: April 2024 -->
