@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - Baseball Relationships"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Alex Nielsen"
 format:
   html:
     self-contained: true
@@ -25,4 +25,158 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd 
+import numpy as np
+import plotly.express as px
+import sqlite3 as sql
+```
+
+
+## Elevator pitch
+
+__In the following data analysis I explore the statistics behind Baseball. Baseball is a numbers game, so data exploration like the one below provides numerous insights into the performance of players and teams over time, and why. I was able to discover changes in salary overtime, explore the batting average statistic, and compared the historical skill of two famous MLB teams.__
+
+```{python}
+#| label: project-data
+#| code-summary: Read and format project data
+
+# Data connection
+sqlite_file = 'lahmansbaseballdb.sqlite'
+con = sql.connect(sqlite_file)
+
+q = '''
+    SELECT * 
+    FROM sqlite_master 
+    WHERE type='table'
+    '''
+table = pd.read_sql_query(q,con)
+# table.filter(['name'])
+```
+
+## Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho
+
+__The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.__
+
+The formatted table below shows the 2 professional players fround from BYUI. The statistics display the years they played, for which team, and their salary for the given year, in descending order by salary. This gives us insights on the annual salary made by the students over the years. Naturally, the longer a student plays the more they seem to make. We also notice that the player with id 'lindsma01' generally made more than 'stephga01'. This is likely due to the fact that he played about 10 years later, thus inflation and general industry/team growth would have increased this amount naturally. 
+
+```{python}
+#| label: Q1
+#| code-summary: Format data
+# Creating table
+player_q = '''
+    SELECT *
+    FROM collegeplaying
+    WHERE schoolID == "idbyuid"
+    '''
+
+results = pd.read_sql_query(player_q, con)
+byuiPlayers = results['playerID']
+
+salary_q = '''
+  SELECT *
+  FROM salaries
+  WHERE playerID == "stephga01" or playerID == "lindsma01"
+  ORDER BY salary DESC
+  '''
+salaries = pd.read_sql_query(salary_q, con)
+salaries['schoolID'] = "idbyuid"
+salary_df = salaries.drop(['lgID', 'ID', 'team_ID'], axis=1)
+```
+
+```{python}
+#| label: Q1-table
+#| code-summary: Table to show BYUI players
+#| tbl-cap: "BYUI Players Table"
+#| tbl-cap-location: top
+# table
+salary_df
+```
+
+
+## Calculate Batting Average
+
+The following three tables show batting percentage statistics in different forms and gives us insights into historical batting accuracy. In order to create these tables I needed to group the stats by playerID and create a batting percentage column from the 'at bats' and 'hits' columns.
+
+
+```{python}
+#| label: Q2
+#| code-summary: Format data
+# Table creation
+batting_q = '''
+  SELECT * 
+  FROM batting
+  WHERE ab >= 1
+  '''
+batting_df = pd.read_sql_query(batting_q, con)
+batting = batting_df[['playerID', 'yearID', 'AB', 'H']]
+batting['bat%'] = 100*round(batting['H']/batting['AB'], 4)
+batting = batting.sort_values('bat%', ascending=False)
+```
+
+This first table simply shows the top 5 batting percentages ever recorded. It makes sense to see that all 5 are people who only had 1 or 2 at bats, and thus easily managed a 100% batting percentage. 
+
+```{python}
+#| label: Q2-table A
+#| code-summary: Highest bat% table
+#| tbl-cap: "Highest bat% table"
+#| tbl-cap-location: top
+# Batting % Table
+display(batting.head(5).sort_values('playerID'))
+```
+
+The next table becomes somewhat more realistic, as it filters any player who had less than 10 at bats for the given year. Still, these players only had a handful of at bats, and thus easily achieved a very high hitting percentage.
+
+```{python}
+#| label: Q2-table B
+#| code-summary: Best batters  after 10
+#| tbl-cap: "Best batter with 10+ AB"
+#| tbl-cap-location: top
+# Batting % after 10 Table
+batting_10 = batting.drop(batting[batting['AB']<10].index)
+display(batting_10.head(5))
+```
+
+The final table shown is by far the most fascinating. This summed every player's at bats in order to find the highest career batting percentage in the MLB. It only checks players with at least 100 career at bats, and results in Ty Cobb having the highest all time batting average at 36.6%.
+
+```{python}
+#| label: Q2-table C
+#| code-summary: Best career batters
+#| tbl-cap: "Best batter career"
+#| tbl-cap-location: top
+# Batting % after career Table
+batting_career = batting.groupby(['playerID'])[['AB', 'H']].sum().reset_index()
+batting_career['bat%'] = 100*round(batting_career['H']/batting_career['AB'], 4)
+batting_career = batting_career.drop(batting_career[batting_career['AB']<100].index).sort_values('bat%', ascending=False)
+display(batting_career.head(5))
+```
+
+
+## Pick any two baseball teams and compare them using a metric of your choice
+
+__Write an SQL query to get the data you need, then make a graph using Plotly Express to visualize the comparison. What do you learn?__
+
+The following line chart compares the number of home runs achieved each year by the Boston Red Sox and New York Yankees. There are several fascinating insights to be found here, firstly I noticed that there is a positive trendline for both teams. This indicates that as the sport has matured, and players' skill increased overtime, it seems more and more home runs have been occuring over the last century. In terms of actual team comparison, both are relatively even, but New York seems to generally have the upper hand in home runs. What I find most interesting, is the very large gap in the 20s and 30s. Note taht the year of this large spike (1920), happens to be the year that the famous 'Babe Ruth' signed with the New York Yankees. Furthermore, we see the number of home runs drastically drop closer to the level of Boston in 1935. Babe Ruth left the Yankees in 1934. It is incredible to see one man seemingly make such a large impact on the performance of a team. 
+
+```{python}
+#| label: Q3
+#| code-summary: Format data
+# Home Run comparison
+team_q = '''
+  SELECT *
+  FROM teams
+  WHERE teamID == "NYA" or teamID == "BOS"
+  '''
+team_df = pd.read_sql_query(team_q, con)[['teamID', 'HR', 'yearID']]
+```
+
+```{python}
+#| label: Q3-chart
+#| code-summary: Team comparison plot
+#| fig-cap: "Team Comparison"
+#| fig-align: center
+# Comparing Boston and New York
+px.line(team_df, x='yearID', y='HR', title='Home runs over time', color='teamID')
+```
