@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - Machine Learning Prediction"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Alex Nielsen"
 format:
   html:
     self-contained: true
@@ -25,4 +25,153 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+import plotly.express as px
+```
+
+
+## Elevator pitch
+
+In the following practice exercise I created a decision tree machine learning model to classify a home as built before or after 1980. I used different analyzing and evaluation techniques to better design and test a model that can make accurate predictions. 
+
+```{python}
+#| label: project-data
+#| code-summary: Read and format project data
+
+# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
+
+# reading data
+df = pd.read_csv("https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv")
+df = df.drop(df[(df.yrbuilt == 2013)].index)
+```
+
+
+## Feature Relationships
+
+__Create 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.__
+
+The following figures show potential relationships between the year a house was built, and its square-footage as well as price. Figure A shows the average liveable area of a home built in a given year. We can see that since the mid-80s, homes tend to be a fair amount larger than before. Figure B represents the average price of a home based on the year it was built. Similarly, The average price, although stable at first, has spiked upward after the 80s. In the mid-2000s it has gone up far beyond any other seemingly due to outliers. 
+
+```{python}
+#| label: Q1
+#| code-summary: Read and format data
+# Data formatting
+
+area = {'year': [], 'meanArea': []}
+for i in df['yrbuilt']:
+  if i not in area['year']:
+    area['year'].append(i)
+    area['meanArea'].append(df.loc[df['yrbuilt'] == i, 'livearea'].mean())
+
+area_df = pd.DataFrame(area).sort_values('year')
+area_df.head(5)
+
+price = {'year': [], 'meanPrice': []}
+for i in df['yrbuilt']:
+  if i not in price['year']:
+    price['year'].append(i)
+    price['meanPrice'].append(df.loc[df['yrbuilt'] == i, 'sprice'].mean())
+
+price_df = pd.DataFrame(price).sort_values('year', ascending=False)
+```
+
+```{python}
+#| label: Q1-chart a
+#| code-summary: liveable area plot
+#| fig-cap: "figure a"
+#| fig-align: center
+px.bar(area_df, x='year', y='meanArea', title='Average Square Footage Over Time')
+```
+
+```{python}
+#| label: Q1-chart b
+#| code-summary: plot example
+#| fig-cap: "figure b"
+#| fig-align: center
+px.bar(price_df, x='year', y='meanPrice', title='Average Price Over Time')
+```
+
+## Model Building
+
+__Build a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.__
+
+In the following code I settled on a decision tree classifier algorithm for its simplicity, and because of the number of features in this dataset. I tailored the data by removing bad features (as well as the year-built column), and trained it with an 80%/20% train-test-split. Ultimately, it achieved an accuracy of 90.3%
+
+```{python}
+#| label: Q2
+#| code-summary: Model Construction
+# Building model
+ml_df = df.drop(['parcel', 'yrbuilt'], axis=1)
+
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+from sklearn import tree
+
+X_train, X_test, y_train, y_test = train_test_split(ml_df.drop('before1980', axis=1), ml_df.before1980, test_size=.2, random_state=42)
+
+clf = tree.DecisionTreeClassifier()
+clf.fit(X_train, y_train)
+
+pred = clf.predict(X_test)
+```
+
+## Significant Features
+
+__Justify your classification model by discussing the most important features selected by your model. This discussion should include a chart and a description of the features.__
+
+The two pie charts shown below display the distribution of the most important feature determined by the model. A decision tree model splits the dataset by given features by first determining which feature brings the dataset to the most homogenous state with either all of one class on either side of the tree. While this is never truly possible in one feature, usually some features better split the data than others. In this case, the model found that the number of stories was the most influential feature. The first chart shows that almost every 1 story house in the dataset was built before 1980. Conversely, the majority (about 55%) of homes with more than one story was built after 1980.
+
+```{python}
+#| label: Q3-1
+#| code-summary: Read and format data
+#| fig-cap: "one story"
+# Feature Charts
+story_df = df[['before1980', 'arcstyle_ONE-STORY']]
+one_story = story_df[story_df['arcstyle_ONE-STORY'] == 1]
+more_stories = story_df[story_df['arcstyle_ONE-STORY'] == 0]
+
+one_pie = px.pie(one_story, names='before1980', title='Houses built before 1980 with one story', color='before1980')
+one_pie.show()
+```
+
+```{python}
+#| label: Q3-2
+#| code-summary: Read and format data
+#| fig-cap: "several stories"
+# Feature Charts
+more_pie = px.pie(more_stories, names='before1980', title='Houses built before 1980 with several stories', color='before1980')
+more_pie.show()
+```
+
+## Model Evaluation
+
+__Describe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.__
+
+There are two measures of accuracy shown below, one numeric and one graphical. The accuracy of 90.3% shown is a simple ratio between the number of correct predictions to the total number of test cases. This means, of all the test cases the model correctly classified 90% of them. Following this, is a graph known as a confusion matrix. This is a plot of all the correctly, and incorrectly classified predictions. This allows us to determine metrics such as the number of false negatives, or the number of times the model predicted a house was built after 1980, when in fact, it was before. In this case, there were 227 false negatives. From the confusion matrix we can see the model is fairly well balanced, and not fooled particularly more by either false negatives or positives. 
+
+```{python}
+#| label: Q4
+#| code-summary: accuracy metrics
+#| fig-cap: "confusion matrix and accuracies"
+#| fig-align: center
+import matplotlib as plt
+
+print(f'Modle Accuracy: {round(metrics.accuracy_score(y_test, pred), 3)*100}%')
+cm = metrics.confusion_matrix(y_test, pred)
+disp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot()
+```
+
+```{python}
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+from sklearn import tree
+df = pd.read_csv("https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv")
+X_train, X_test, y_train, y_test = train_test_split(df.drop('before1980', axis=1), df.before1980, test_size=.34, random_state=76)
+
+X_train['sprice'].head(10)
+```
