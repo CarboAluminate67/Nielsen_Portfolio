@@ -86,9 +86,64 @@
   {
     "objectID": "Projects/project1.html",
     "href": "Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Client Report - What’s in a Name",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#elevator-pitch",
+    "href": "Projects/project1.html#elevator-pitch",
+    "title": "Client Report - What’s in a Name",
+    "section": "",
+    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#personal-name-historical-use",
+    "href": "Projects/project1.html#personal-name-historical-use",
+    "title": "Client Report - What’s in a Name",
+    "section": "Personal Name Historical Use",
+    "text": "Personal Name Historical Use\nThe following data shows the use of my name ‘Alexander’ within the last ~100 years. Plainly seen in the following chart, which shows the number of children given the name every year between 1910 and 2015, there is a drastic spike upward beginning in the 1980s, and stabalizing since the mid-90s. before 1980, the usage of the name was quite stable with around 500-1000 babies named ‘Alexander’ each year. It grew rapidly over 15 years and over the last 2 decades there have been about 14-16k new ‘Alexanders’ every year.\nThe subsequent table supports the chart with a narrower scope. The table displays the number of children named ‘Alexander’ every 10 years with 3 levels of specificity: children in NC, my home state, in ID, the home of BYUI, and total in the U.S. In the table we can see far more ‘Alexanders’ in NC than ID, and both states follow the trendline sharp increase in the last ~40 years.\n\n\nRead and format data\n# Data formatting code\nalexander = df[(df.name == 'Alexander')]\n\n\n::: {#cell-Q1 chart .cell execution_count=4}\n\npersonal name plot\n# Plotting line chart \nchart = px.line(alexander,\n    x=\"year\", \n    y=\"Total\"\n)\nchart.show()\n\n\n                                                \nAlexander increases overtime\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Alexander over the years’ execution_count=5}\n\nAlexander table\n# Name table\nmydat = alexander[(alexander.year%10 == 0)]\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"NC\", \"ID\", \"Total\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\n\nyear\nNC\nID\nTotal\n\n\n\n\n1\n1920\n57.0\n0.0\n1439.0\n\n\n2\n1930\n38.0\n0.0\n824.0\n\n\n3\n1940\n44.0\n0.0\n726.0\n\n\n4\n1950\n51.0\n0.0\n1124.0\n\n\n5\n1960\n41.0\n0.0\n1160.0\n\n\n6\n1970\n50.0\n6.0\n2465.0\n\n\n7\n1980\n33.0\n9.0\n2822.5\n\n\n8\n1990\n286.0\n50.0\n11522.0\n\n\n9\n2000\n425.0\n72.0\n16690.5\n\n\n10\n2010\n513.0\n81.0\n16178.0\n\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#age-of-brittany",
+    "href": "Projects/project1.html#age-of-brittany",
+    "title": "Client Report - What’s in a Name",
+    "section": "Age of Brittany",
+    "text": "Age of Brittany\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nThe following bar chart displays the age density of people named Brittany, showing a normal distribution with a central tendency of 34 years old. Given the histogram I would guess that anyone named brittany would be between 24 and 40 years old. Sequentially, I would not guess any ages younger or older than that range.\n\n\nRead and format data\n# Filtering for brittany\nbrit = df.query('name == \"Brittany\"')\nbrit['age'] = 2024-brit['year']\nsumTotal = sum(brit['Total'])\nbrit['density'] = brit['Total']/sumTotal\n\n\n::: {#cell-Q2 chart .cell execution_count=7}\n\nBrittany age bar\n# Charting ages of Brittany\n\nbritChart = px.bar(brit,\n    x='age',\n    y='density')\nbritChart.show()\n\n\n                                                \nAge chart of Brittanys\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#christian-name-trends",
+    "href": "Projects/project1.html#christian-name-trends",
+    "title": "Client Report - What’s in a Name",
+    "section": "Christian Name Trends",
+    "text": "Christian Name Trends\nThe given line graph shows the rise and fall of Christian names over the last century. At the turn of the 20th century, Christian names significantly rose in popularity, with spikes that continued to climb until around the 1950s. After the mid-50s however began a sudden and sharp decline in christian names, which is leveling at an all time low, approaching only small handfuls of names in the early 21st century.\nThe following table compares the number of christian names, specifically Mary, each decade in 3 states: UT, a predominantly Christian state, NC, my home state, and CA, a hub of cultures both foreign and domestic. Despite the cultural differences in each state, all 3 shared very close trends in the use of name Mary, neither seemingly favoring the name over another.\n\n\nRead and format data\n# Filtering for 4 Christian names\nchristian = df.query('name == \"Mary\" or name == \"Martha\" or name == \"Peter\" or name == \"Paul\"')\nchristian['decade'] = christian['year'] - christian['year']%10\n\n\n::: {#cell-Christian Name Line Plot .cell execution_count=9}\n\nline plot for naming trends\n# Line Plot to explain christian name trends\nchristChart = px.line(christian,\n    x='year',\n    y='Total',\n    color='name')\nchristChart.show()\n\n\n                                                \nChristian Names Over Time\n\n:::\n::: {#cell-Mary Table .cell .tbl-cap-location-top tbl-cap=‘The Name Mary Over Time’ execution_count=10}\n\ntable of decade-based naming\n# table of decade-based naming\nmydat = christian.head(1000)\\\n    .groupby('decade')\\\n    .sum()\\\n    .reset_index()\\\n    .head(20)\\\n    .filter([\"decade\", \"UT\", \"NC\", \"CA\", \"Mary\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\n\ndecade\nUT\nNC\nCA\n\n\n\n\n0\n1910\n1953.0\n14445.0\n9061.0\n\n\n1\n1920\n2842.0\n22334.5\n16490.5\n\n\n2\n1930\n2581.0\n19733.5\n16167.5\n\n\n3\n1940\n3750.0\n22064.0\n32244.5\n\n\n4\n1950\n4217.0\n19908.0\n55489.0\n\n\n5\n1960\n3157.0\n13620.0\n36227.0\n\n\n6\n1970\n2748.0\n7503.0\n22087.0\n\n\n7\n1980\n2219.5\n6112.5\n18970.0\n\n\n8\n1990\n1459.0\n5232.0\n18345.0\n\n\n9\n2000\n1279.0\n3616.0\n11403.0\n\n\n10\n2010\n645.0\n1300.0\n4270.0\n\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#film-effect-on-names",
+    "href": "Projects/project1.html#film-effect-on-names",
+    "title": "Client Report - What’s in a Name",
+    "section": "Film Effect on Names",
+    "text": "Film Effect on Names\nThe graph below shows the use of the name ‘Luke’ overtime, which can be compared to the release date of the famous “Star Wars” films. The very first Star Wars was released in 1977, and the original trilogy continued through 1983. Since then several more films were made between 2001 and 2019. We can see immediately into the late 70s, when the world-wide popular movies was released, there was a sharp increase in the number of children named luke, and continued to rise into the 21st century. However, while it seems fitting that the Star Wars films would cause such a cultural naming shift, I believe other circumstances contributed to the increase. It is clear that movies can have an impact on the names that parents give to children, but this perhaps not to the degree that this chart portrays.\n\n\nRead and format data\n# Include and execute your code here\nluke = df.query('name == \"Luke\"')\n\n\n::: {#cell-Luke Name Line Plot .cell execution_count=12}\n\nline plot for naming trends\n# Line Plot to explore Luke after Star Wars\nlukeChart = px.line(luke,\n    x='year',\n    y='Total')\nlukeChart.show()\n\n\n                                                \nLuke After Star Wars\n\n:::",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
