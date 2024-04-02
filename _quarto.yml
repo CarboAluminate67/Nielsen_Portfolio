@@ -25,17 +25,17 @@ website:
         file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
-      - text: "Data Cleansing"
+      - text: "DTE Site"
         file: cleansing.qmd
-      - text: "Data Exploration"
+      - text: "Asteroids"
         file: exploration.qmd
-      - text: "Story Telling"
+      - text: "Analyzing Rockets"
         file: story_telling.qmd
-      - text: "Machine Learning"
+      - text: "Engine Catalogue"
         file: ml.qmd
-      - text: "Full Stack"
+      - text: "Engine Designer"
         file: full_stack.qmd
-      - text: "Competition"
+      - text: "Space Research"
         file: competition.qmd
       
   sidebar:
@@ -61,10 +61,10 @@ website:
         - text: "Project 5"
           file: Projects/project5.qmd
         - text: "---"
-        #continue the pattern if you need more links
+        #continue the pattern if you need more inks
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
 
-format:  
+format:  l
   html:
     theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
       light: flatly # more themes can be found [here](https://quarto.org/docs/output-formats/html-themes.html)

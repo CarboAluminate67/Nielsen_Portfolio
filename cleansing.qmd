@@ -1,40 +1,20 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
+title: "DTE Website"
+subtitle: "Space Launch Provider Website"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Idea
+This website was an idea I had since high school, one that became a reality as part of a web development class my first semester of college. The thought was that info on rockets and launch providers was far to spread out and difficult to find, so I took it upon myself to compile a 'wiki' of sorts on six major rocket launch providers. The infor includes major rockets, noteable missions, their history, successes, etc. While it may not be as flush with information as company specific websites, it has a good over-arching collection of information. I made the site completely from scratch, coding the html, css, and javascript myself, as well as all of the research. 
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+# Website
 
-# %% [markdown]
-# ---
-# title: Palmer Penguins
-# author: Norah Jones
-# date: 3/12/23
-# ---
+Below is the website publicly published online through github pages. 
 
-# %%
-#| echo: false
-import pandas as pd
-df = pd.read_csv("palmer-penguins.csv")
+[DTE Space](https://carboaluminate67.github.io/wdd130/space/)
 
-# %% [markdown]
-"""
-## Exploring the data
+# Repository
 
-See @fig-bill-sizes for an exploration of bill sizes by species.
-"""
+This is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork. 
 
-# %% 
-#| label: fig-bill-sizes
-#| fig-cap: Bill Sizes by Species
-                                          
-import matplotlib.pyplot as plt           
-import seaborn as sns
-
-g = sns.FacetGrid(df, hue="species", height=3, aspect=3.5/1.5)
-g.map(plt.scatter, "bill_length_mm", "bill_depth_mm").add_legend()
-
+[WDD Repo](https://github.com/CarboAluminate67/wdd130)
