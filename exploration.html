@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.4.542">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alex Nielsen Data Science Portfolio - about me</title>
+<title>Alex Nielsen Data Science Portfolio - Hazardous NEO</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,27 +105,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cleansing.html"> 
-<span class="menu-text">Data Cleansing</span></a>
+<span class="menu-text">DTE Site</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./exploration.html" aria-current="page"> 
-<span class="menu-text">Data Exploration</span></a>
+<span class="menu-text">Asteroids</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./story_telling.html"> 
-<span class="menu-text">Story Telling</span></a>
+<span class="menu-text">Analyzing Rockets</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./ml.html"> 
-<span class="menu-text">Machine Learning</span></a>
+<span class="menu-text">Engine Catalogue</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./full_stack.html"> 
-<span class="menu-text">Full Stack</span></a>
+<span class="menu-text">Engine Designer</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./competition.html"> 
-<span class="menu-text">Competition</span></a>
+<span class="menu-text">Space Research</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -144,10 +144,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#title-1-header" id="toc-title-1-header" class="nav-link active" data-scroll-target="#title-1-header">Title 1 Header</a>
-  <ul class="collapse">
-  <li><a href="#title-2-header" id="toc-title-2-header" class="nav-link" data-scroll-target="#title-2-header">Title 2 Header</a></li>
-  </ul></li>
+  <li><a href="#idea" id="toc-idea" class="nav-link active" data-scroll-target="#idea">Idea</a></li>
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
   </ul>
 </nav>
     </div>
@@ -156,8 +154,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">about me</h1>
-<p class="subtitle lead">my data science portfolio</p>
+<h1 class="title">Hazardous NEO</h1>
+<p class="subtitle lead">Machine Learning Predicts Hazardous Asteroids</p>
 </div>
 
 
@@ -174,14 +172,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="title-1-header" class="level1">
-<h1>Title 1 Header</h1>
-<section id="title-2-header" class="level2">
-<h2 class="anchored" data-anchor-id="title-2-header">Title 2 Header</h2>
-<p><a href="https://quarto.org/docs/authoring/markdown-basics.html#links-images">MarkDown Basics</a></p>
-
-
+<section id="idea" class="level1">
+<h1>Idea</h1>
+<p>Out of my own curiosity, and in an effort to learn and practice machine learning, I sought to create a model that could predict if a Near Earth Object was ‘potentially hazardous’. I was able to find an online dataset of NEO recorded by NASA, about 10% of which were considered potentially hazardous. This label comes from a multitude of factors, including size, distance from Earth, relative velocity, and more. I endeavored to create my own Machine Learning Classifier to predict if an asteroid would be considered hazardous based on these factors. Ultimately, after testing with both GDBT and Random Forest trees, the latter had better performance with ~93% accuracy. I used techniques such as oversampling the minority class, decreasing the learning rate due to the high number of instances, etc.</p>
 </section>
+<section id="repository" class="level1">
+<h1>Repository</h1>
+<p>Here is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered.</p>
+<p><a href="https://github.com/CarboAluminate67/NearEarthObjects">NEO Repo</a></p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -408,24 +408,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/CarboAluminate67\.github\.io\/Nielsen_Portfolio\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -460,11 +442,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -512,12 +490,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
+      return note.innerHTML;
     }
   }
   for (var i=0; i<xrefs.length; i++) {
