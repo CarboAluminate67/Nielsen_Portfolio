@@ -1,5 +1,5 @@
 /* css styles */
-.level1 a {
+.level1 img {
     height: 250px;
     width: 250px;
     padding: 25px;
@@ -8,6 +8,6 @@
     transition: transform .2s;
 }
 
-.level1 a:hover {
+.level1 img:hover {
     transform: scale(1.5);
 }
