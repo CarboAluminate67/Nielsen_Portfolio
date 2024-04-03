@@ -1,209 +1,37 @@
 [
   {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "Engine Catalogue",
-    "section": "",
-    "text": "Idea\nThis is the newest version of a reccuring project in my portfolio: a rocket engine catalogue/library. This began as a freshman in high school, when I began playing a game called Kerbal Space Program, a spaceflight simulator in which you design your own rockets to fly to moons, other planets, and beyond. It is a complicated and overwhelming game at first, with many parts to choose from, especially different engines. I decided to use my computer science knowledge to help simplify the choices of engines. I created a catalogue tool where I could record different engines, their efficiencies, thrust, and search for them based on certain parameters. This made it far easier to choose the right engine for the job. Since then, during my college years, I have recreated this project several times, each a variation of the last, while learning new concepts. Most recently, to learn C#, I adapted this project to instead record, sort, and save actual, real world engines. It is a user input program where the user can record actual values from real life, using Object Oriented C#.\n\n\nRepository\nHere is the repository in which I published this project, along with several other small projects during my C# programming with functions class.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "Hazardous NEO",
-    "section": "",
-    "text": "Idea\nOut of my own curiosity, and in an effort to learn and practice machine learning, I sought to create a model that could predict if a Near Earth Object was ‘potentially hazardous’. I was able to find an online dataset of NEO recorded by NASA, about 10% of which were considered potentially hazardous. This label comes from a multitude of factors, including size, distance from Earth, relative velocity, and more. I endeavored to create my own Machine Learning Classifier to predict if an asteroid would be considered hazardous based on these factors. Ultimately, after testing with both GDBT and Random Forest trees, the latter had better performance with ~93% accuracy. I used techniques such as oversampling the minority class, decreasing the learning rate due to the high number of instances, etc.\n\n\nRepository\nHere is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Alex Nielsen - About Me",
-    "section": "",
-    "text": "I am an enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field."
-  },
-  {
-    "objectID": "index.html#computer-science",
-    "href": "index.html#computer-science",
-    "title": "Alex Nielsen - About Me",
-    "section": "Computer Science",
-    "text": "Computer Science\nSince my early education I have been excited about computers; working on them, learning to talk to them, and creating programs that perform legitimately useful fucntions. I have always sought to learn new skills and information, delving deeper into the wide and complicated world of computer science. There is always more to learn, and my curiosity never ends. Since my first ‘Hello World’ program in Lua when I was in the 6th grade, my interest in the industry has only snowballed. In particular, I care about the bare bones function of these magic machines: I like to be in the back end, writing scripts to analyze data, do complex math, or perform server side functions. That said, I am always happy when I’m writing code, whether it is python or html.\nI am particularly intrigued by data science: manipulating dataframes to find and visualize discrete relationships, that shine on unpredicted correlations. As well as the fascinating world of machine learning; Countless model frameworks for classification, regression, content generation, etc. I love learning how these algorithms work, at a very low level of the very math behind a computer’s ability to learn."
-  },
-  {
-    "objectID": "index.html#aerospace",
-    "href": "index.html#aerospace",
-    "title": "Alex Nielsen - About Me",
-    "section": "Aerospace",
-    "text": "Aerospace\nMost of my passion lies in the aerospace industry, in particular, the subset of spaceflight and rocketry. I simply cannot begin to describe my fascination for the science behind rocket propulsion, and space exploration. I endeavor to someday use my skills in computer science, and passion for the field, to further develop our knowledge in spaceflight, and rocket engines. You will notice that a large majority of my own projects, both personal and in school, are related in some way to space exploration."
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "Engine Designer",
-    "section": "",
-    "text": "Idea\nThis is perhaps the most ambitious project I have done to date; one that I have sat on for a while: A simulator web-app, in which any user, with no background knowledge in the workings of a rocket engine, could adjust, or ‘play with’ design sliders and checkboxes, adjusting the nozzle diameter, fuel type, engine cycle etc. As they adjust these parameters, they can see the resulting changes in rocket performance: efficiency and thrust, in real time. Of course, the math behind all of this is quite complcicated, as it quite literally is rocket science. However, I was beyond fascinated by the idea, so I began researching, hours of it. This is my favorite project I have worked on, in fact, I am still working on it, tweaking the equations, and adding prettier styling to the website to this day.\n\n\nWebsite\nHere is the website where you can see changes in rocket performance, and hopefull learn something interesting about rocket engines. I developed this website from scratch through GitHub pages, on my own time… for fun!\n\n\n\nRepository\nIn this public repository you can get a deeper look at the development. You will see a markdown file with all of my research and notes on the equations and assumptions needed for the math.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "DTE Website",
-    "section": "",
-    "text": "Idea\nThis website was an idea I had since high school, one that became a reality as part of a web development class my first semester of college. The thought was that info on rockets and launch providers was far to spread out and difficult to find, so I took it upon myself to compile a ‘wiki’ of sorts on six major rocket launch providers. The infor includes major rockets, noteable missions, their history, successes, etc. While it may not be as flush with information as company specific websites, it has a good over-arching collection of information. I made the site completely from scratch, coding the html, css, and javascript myself, as well as all of the research.\n\n\nWebsite\nBelow is the website publicly published online through github pages.\n\n\n\nRepository\nThis is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Projects/project1.html",
-    "href": "Projects/project1.html",
-    "title": "Client Report - What’s in a Name",
-    "section": "",
-    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#elevator-pitch",
-    "href": "Projects/project1.html#elevator-pitch",
-    "title": "Client Report - What’s in a Name",
-    "section": "",
-    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#personal-name-historical-use",
-    "href": "Projects/project1.html#personal-name-historical-use",
-    "title": "Client Report - What’s in a Name",
-    "section": "Personal Name Historical Use",
-    "text": "Personal Name Historical Use\nThe following data shows the use of my name ‘Alexander’ within the last ~100 years. Plainly seen in the following chart, which shows the number of children given the name every year between 1910 and 2015, there is a drastic spike upward beginning in the 1980s, and stabalizing since the mid-90s. before 1980, the usage of the name was quite stable with around 500-1000 babies named ‘Alexander’ each year. It grew rapidly over 15 years and over the last 2 decades there have been about 14-16k new ‘Alexanders’ every year.\nThe subsequent table supports the chart with a narrower scope. The table displays the number of children named ‘Alexander’ every 10 years with 3 levels of specificity: children in NC, my home state, in ID, the home of BYUI, and total in the U.S. In the table we can see far more ‘Alexanders’ in NC than ID, and both states follow the trendline sharp increase in the last ~40 years.\n\n\nRead and format data\n# Data formatting code\nalexander = df[(df.name == 'Alexander')]\n\n\n::: {#cell-Q1 chart .cell execution_count=4}\n\npersonal name plot\n# Plotting line chart \nchart = px.line(alexander,\n    x=\"year\", \n    y=\"Total\"\n)\nchart.show()\n\n\n                                                \nAlexander increases overtime\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Alexander over the years’ execution_count=5}\n\nAlexander table\n# Name table\nmydat = alexander[(alexander.year%10 == 0)]\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"NC\", \"ID\", \"Total\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\n\nyear\nNC\nID\nTotal\n\n\n\n\n1\n1920\n57.0\n0.0\n1439.0\n\n\n2\n1930\n38.0\n0.0\n824.0\n\n\n3\n1940\n44.0\n0.0\n726.0\n\n\n4\n1950\n51.0\n0.0\n1124.0\n\n\n5\n1960\n41.0\n0.0\n1160.0\n\n\n6\n1970\n50.0\n6.0\n2465.0\n\n\n7\n1980\n33.0\n9.0\n2822.5\n\n\n8\n1990\n286.0\n50.0\n11522.0\n\n\n9\n2000\n425.0\n72.0\n16690.5\n\n\n10\n2010\n513.0\n81.0\n16178.0\n\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#age-of-brittany",
-    "href": "Projects/project1.html#age-of-brittany",
-    "title": "Client Report - What’s in a Name",
-    "section": "Age of Brittany",
-    "text": "Age of Brittany\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nThe following bar chart displays the age density of people named Brittany, showing a normal distribution with a central tendency of 34 years old. Given the histogram I would guess that anyone named brittany would be between 24 and 40 years old. Sequentially, I would not guess any ages younger or older than that range.\n\n\nRead and format data\n# Filtering for brittany\nbrit = df.query('name == \"Brittany\"')\nbrit['age'] = 2024-brit['year']\nsumTotal = sum(brit['Total'])\nbrit['density'] = brit['Total']/sumTotal\n\n\n::: {#cell-Q2 chart .cell execution_count=7}\n\nBrittany age bar\n# Charting ages of Brittany\n\nbritChart = px.bar(brit,\n    x='age',\n    y='density')\nbritChart.show()\n\n\n                                                \nAge chart of Brittanys\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#christian-name-trends",
-    "href": "Projects/project1.html#christian-name-trends",
-    "title": "Client Report - What’s in a Name",
-    "section": "Christian Name Trends",
-    "text": "Christian Name Trends\nThe given line graph shows the rise and fall of Christian names over the last century. At the turn of the 20th century, Christian names significantly rose in popularity, with spikes that continued to climb until around the 1950s. After the mid-50s however began a sudden and sharp decline in christian names, which is leveling at an all time low, approaching only small handfuls of names in the early 21st century.\nThe following table compares the number of christian names, specifically Mary, each decade in 3 states: UT, a predominantly Christian state, NC, my home state, and CA, a hub of cultures both foreign and domestic. Despite the cultural differences in each state, all 3 shared very close trends in the use of name Mary, neither seemingly favoring the name over another.\n\n\nRead and format data\n# Filtering for 4 Christian names\nchristian = df.query('name == \"Mary\" or name == \"Martha\" or name == \"Peter\" or name == \"Paul\"')\nchristian['decade'] = christian['year'] - christian['year']%10\n\n\n::: {#cell-Christian Name Line Plot .cell execution_count=9}\n\nline plot for naming trends\n# Line Plot to explain christian name trends\nchristChart = px.line(christian,\n    x='year',\n    y='Total',\n    color='name')\nchristChart.show()\n\n\n                                                \nChristian Names Over Time\n\n:::\n::: {#cell-Mary Table .cell .tbl-cap-location-top tbl-cap=‘The Name Mary Over Time’ execution_count=10}\n\ntable of decade-based naming\n# table of decade-based naming\nmydat = christian.head(1000)\\\n    .groupby('decade')\\\n    .sum()\\\n    .reset_index()\\\n    .head(20)\\\n    .filter([\"decade\", \"UT\", \"NC\", \"CA\", \"Mary\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\n\ndecade\nUT\nNC\nCA\n\n\n\n\n0\n1910\n1953.0\n14445.0\n9061.0\n\n\n1\n1920\n2842.0\n22334.5\n16490.5\n\n\n2\n1930\n2581.0\n19733.5\n16167.5\n\n\n3\n1940\n3750.0\n22064.0\n32244.5\n\n\n4\n1950\n4217.0\n19908.0\n55489.0\n\n\n5\n1960\n3157.0\n13620.0\n36227.0\n\n\n6\n1970\n2748.0\n7503.0\n22087.0\n\n\n7\n1980\n2219.5\n6112.5\n18970.0\n\n\n8\n1990\n1459.0\n5232.0\n18345.0\n\n\n9\n2000\n1279.0\n3616.0\n11403.0\n\n\n10\n2010\n645.0\n1300.0\n4270.0\n\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#film-effect-on-names",
-    "href": "Projects/project1.html#film-effect-on-names",
-    "title": "Client Report - What’s in a Name",
-    "section": "Film Effect on Names",
-    "text": "Film Effect on Names\nThe graph below shows the use of the name ‘Luke’ overtime, which can be compared to the release date of the famous “Star Wars” films. The very first Star Wars was released in 1977, and the original trilogy continued through 1983. Since then several more films were made between 2001 and 2019. We can see immediately into the late 70s, when the world-wide popular movies was released, there was a sharp increase in the number of children named luke, and continued to rise into the 21st century. However, while it seems fitting that the Star Wars films would cause such a cultural naming shift, I believe other circumstances contributed to the increase. It is clear that movies can have an impact on the names that parents give to children, but this perhaps not to the degree that this chart portrays.\n\n\nRead and format data\n# Include and execute your code here\nluke = df.query('name == \"Luke\"')\n\n\n::: {#cell-Luke Name Line Plot .cell execution_count=12}\n\nline plot for naming trends\n# Line Plot to explore Luke after Star Wars\nlukeChart = px.line(luke,\n    x='year',\n    y='Total')\nlukeChart.show()\n\n\n                                                \nLuke After Star Wars\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - Late Flights",
-    "section": "",
-    "text": "The following analysis focuses on delays experienced by seven different U.S. airports. Major factors that influence delays include location, weather, and time of the year. It is clear to see that certain airport experience more delays than others, and certain airports experience longer delays. I made geographical inferences about airports based on the data behin their latencies.\n\n\nRead project data\n# Initializing pandas dataframe\ndata = \"https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json\"\ndf = pd.read_json(data)\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#elevator-pitch",
-    "href": "Projects/project2.html#elevator-pitch",
-    "title": "Client Report - Late Flights",
-    "section": "",
-    "text": "The following analysis focuses on delays experienced by seven different U.S. airports. Major factors that influence delays include location, weather, and time of the year. It is clear to see that certain airport experience more delays than others, and certain airports experience longer delays. I made geographical inferences about airports based on the data behin their latencies.\n\n\nRead project data\n# Initializing pandas dataframe\ndata = \"https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json\"\ndf = pd.read_json(data)\n\n\nHighlight the Questions and Tasks",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#tidying-data",
-    "href": "Projects/project2.html#tidying-data",
-    "title": "Client Report - Late Flights",
-    "section": "Tidying data",
-    "text": "Tidying data\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”)\nThe following formatting code fixes missing values in the dataframe in two ways. First, there are several observations with a missing airport name, so this re-maps all airport_codes to a certain name in order to fill in this missing data.\nNext, it replaces the many “-999” values with “NaN” using a mapped lambda function in order to unify missing values and make it easier to read. In the table below you can see that observation 0 has an ‘NaN’ value under ‘num_of_delays_late_aircraft’, which used to be ‘-999’. Additionally observation 2 used to be missing the airport name, but my code automatically filled it in using the airport_code.\n\n\nRe-format data\n# Data tidying by cleaning null values\nmap_airport = {\n    \"ATL\": \"Atlanta, GA: Hartsfield-Jackson Atlanta International\",\n    \"DEN\": \"Denver, CO: Denver International\",\n    \"IAD\": \"Washington, DC: Dulle International\",\n    \"ORD\": \"Chicago, IL: Chicago O'Hare International\",\n    \"SAN\": \"San Diego, CA: San Diego International\",\n    \"SFO\": \"San Francisco, CA: San Francisco International\",\n    \"SLC\": \"Salt Lake City, UT: Salt Lake City International\"\n}\nnull_map = lambda x: \"NaN\" if x == -999 else x\ndf['airport_name'] = df['airport_code'].map(map_airport)\ndf = df.map(null_map)\n\n\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Showing Null Values’ execution_count=4}\n\ntidy data\n# Table to display NaN values\ndisplay(df.head(3))\n\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nJanuary\n2005.0\n35048\n1500+\nNaN\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n\n\n1\nDEN\nDenver, CO: Denver International\nJanuary\n2005.0\n12687\n1041\n928\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n\n\n2\nIAD\nWashington, DC: Dulle International\nJanuary\n2005.0\n12381\n414\n1058\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#worst-airport",
-    "href": "Projects/project2.html#worst-airport",
-    "title": "Client Report - Late Flights",
-    "section": "Worst Airport",
-    "text": "Worst Airport\nWhich airport has the worst delays?\nA question able to be answered simply by the bar chart displayed below. It is clear to see that Orlando had the most delays out of the given airports, closely followed by Atlanta. These two airports are far more prone to significant delay than any other airport. I used the simple metric of total delay in minutes. While other airports may experience more delays, they are likely far more minor, such as 30 minutes long, whereas these could be trip-ending delays. This could be due to their size and pure traffic, among other factors such as location, weather, etc. I expect the heavy amount of hurricane type weather experienced in these two locations contributed significantly to larger delays. This is supported further by the table, which shows that Orlando has the longest average delay of 1.13 hours. This being said, the table also shows San Francisco actually has the highest density of delays relative to the amount of air traffic it handles, with Orlando being the next worst.\n\n\nFormatting data\n# Delay info on each airport\ndelays = df[['airport_code', 'minutes_delayed_total', 'num_of_flights_total', 'num_of_delays_total']].groupby('airport_code')\nsum_delays = pd.DataFrame(delays.minutes_delayed_total.sum())\nsum_delays['total_flights'] = delays.num_of_flights_total.sum()\nsum_delays['total_delays'] = delays.num_of_delays_total.sum()\nsum_delays['delay_rate'] = round(sum_delays['total_delays']/sum_delays['total_flights'], 2)\nsum_delays['average_delay'] = round((sum_delays['minutes_delayed_total']/60)/sum_delays['total_delays'], 2)\n\n\n::: {#cell-Q2 chart .cell execution_count=6}\n\nbar chart of delays\n# Bar chart to display which airport has the worst delays\npx.bar(sum_delays['minutes_delayed_total'], labels={\"value\": 'Total Delay in Minutes', \"airport_code\": 'Airport'}).update_traces(showlegend=False) \n\n\n                                                \nWorst Airport\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Airport Delays’ execution_count=7}\n\nDelay table\n# Delay info for airports\ndelayData = sum_delays\\\n    .groupby('airport_code')\\\n    .sum()\\\n    .reset_index()\\\n    .head(20)\\\n    .filter([\"airport_code\", \"total_flights\", \"total_delays\", \"delay_rate\", \"average_delay\"])\ndisplay(delayData)\n\n\n\n\n\n\n\n\n\n\nairport_code\ntotal_flights\ntotal_delays\ndelay_rate\naverage_delay\n\n\n\n\n0\nATL\n4430047\n902443\n0.20\n1.00\n\n\n1\nDEN\n2513974\n468519\n0.19\n0.90\n\n\n2\nIAD\n851571\n168467\n0.20\n1.02\n\n\n3\nORD\n3597588\n830825\n0.23\n1.13\n\n\n4\nSAN\n917862\n175132\n0.19\n0.79\n\n\n5\nSFO\n1630945\n425604\n0.26\n1.04\n\n\n6\nSLC\n1403384\n205160\n0.15\n0.82\n\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#best-month",
-    "href": "Projects/project2.html#best-month",
-    "title": "Client Report - Late Flights",
-    "section": "Best Month",
-    "text": "Best Month\nWhat is the best month to fly if you want to avoid delays of any length?\nThe following bar chart gives a clear cut answer that November is surprisingly the best month to avoid any delays whatsoever. Notice however that the amount of delay is measured in number of delays, not by the total loss of time. This means that while other months have more delays, they may be less severe.\n\n\nRead and format data\n# Grouping by month\nmonth = df[['airport_code', 'month', 'num_of_delays_total']]\nmonthSum = month.groupby('month').num_of_delays_total.sum().drop('n/a')\n\n\n::: {#cell-Q3 chart .cell execution_count=9}\n\nbar chart of travel months\n# Bar chart to display which months have most delays\npx.bar(monthSum, labels={'month': 'Month', 'value': 'Number of Delays'}).update_layout(xaxis={'categoryorder':'total descending'}).update_traces(showlegend=False, marker_color='yellowgreen') \n\n\n                                                \nBest Month\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#weather-delays",
-    "href": "Projects/project2.html#weather-delays",
-    "title": "Client Report - Late Flights",
-    "section": "Weather Delays",
-    "text": "Weather Delays\nYour job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild)\nThe re-formatted data below makes two significant changes. It replaces null values under delays caused by late aircraft with the average for this column. Next it creates a new column, which is the total number of weather related delays. The original weather column only includes major weather delays, however this column accounts for all delays big and small, by taking delays from the ‘late aircraft’ and ‘nas’ categories.\n\n\nFormatting data\n# Re-calculated Weather Delays\ndf['num_of_delays_late_aircraft'] = df['num_of_delays_late_aircraft'].map(lambda x: 1061 if x == 'NaN' else x)\ndf.head(5)\nmonth_map = {\n  'January': .65,\n  'Febuary': .65,\n  'March': .65,\n  'April': .4,\n  'May': .4,\n  'June': .4,\n  'July': .4,\n  'August': .4,\n  'September': .65,\n  'October': .65,\n  'November': .65,\n  'December': .65\n}\ndf['month_multiplier'] = df['month'].map(month_map)\ndf['total_weather'] = round(df['num_of_delays_weather'] + .3*df['num_of_delays_late_aircraft'] + df['month_multiplier']*df['num_of_delays_nas'])\ndf.head(5)\n\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\nmonth_multiplier\ntotal_weather\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nJanuary\n2005.0\n35048\n1500+\n1061\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n0.65\n3755.0\n\n\n1\nDEN\nDenver, CO: Denver International\nJanuary\n2005.0\n12687\n1041\n928\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n0.65\n1119.0\n\n\n2\nIAD\nWashington, DC: Dulle International\nJanuary\n2005.0\n12381\n414\n1058\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n0.65\n960.0\n\n\n3\nORD\nChicago, IL: Chicago O'Hare International\nJanuary\n2005.0\n28194\n1197\n2255\n5415\n5\n306\n9178\n88691.0\n160811\n364382.0\n151\n24859\n638894\n0.65\n4502.0\n\n\n4\nSAN\nSan Diego, CA: San Diego International\nJanuary\n2005.0\n7283\n572\n680\n638\n7\n56\n1952\n27436.0\n38445\n21127.0\n218\n4326\n91552\n0.65\n675.0",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#worst-weather",
-    "href": "Projects/project2.html#worst-weather",
-    "title": "Client Report - Late Flights",
-    "section": "Worst Weather",
-    "text": "Worst Weather\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport.\nThe bar chart shown displays the proportion of total flights from an airport that were delayed for any weather reasons, major and minor. As hypothesized above, Orlando has a very high proportion of flights delayed by weather, but it is still topped by San Francisco. Salt Lake City has the smallest proportion of weather related delays, likely due to its far inland location without any severe weather conditions apart from snow in the winter time.\n\n\nRead and format data\n# Weather Delays per airport\nweather = df[['airport_code', 'num_of_flights_total', 'total_weather']]\nweather = weather.groupby('airport_code').agg({'num_of_flights_total':sum, 'total_weather':sum})\nweather['proportion'] = weather['total_weather']*100/weather['num_of_flights_total']\n\n\n::: {#cell-Q5 chart .cell execution_count=12}\n\nbar chart of weather delays\n# Bar chart to display which airports have most weather related delays\npx.bar(weather['proportion'], labels={\"value\": 'Percent Delayed By Weather', \"airport_code\": 'Airport'}).update_traces(showlegend=False, marker_color='slategrey')\n\n\n                                                \nWorst Weather\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Uncomment the entire section to use this template\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "Templates/DS350_Template.html",
     "href": "Templates/DS350_Template.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "TODO: Update with template from Paul\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "Analyzing Rockets",
+    "section": "",
+    "text": "Idea\nAs a project to practice data analysis and learn the use of pandas and python plotting techniques, I found a database of every rocket launch in history and performed certain trend analysis. My main goal was to identify improvements in rocketry of the decades, as well as analyze the performance of various launch vehicles and providers.\n\n\nRepository\nHere is the public GitHub repository in which I developed this program, and explored the history of rocket launches.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
   },
   {
     "objectID": "Projects/project4.html",
@@ -265,10 +93,209 @@
     "href": "Projects/project4.html#model-evaluation",
     "title": "Client Report - Machine Learning Prediction",
     "section": "Model Evaluation",
-    "text": "Model Evaluation\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\nThere are two measures of accuracy shown below, one numeric and one graphical. The accuracy of 90.3% shown is a simple ratio between the number of correct predictions to the total number of test cases. This means, of all the test cases the model correctly classified 90% of them. Following this, is a graph known as a confusion matrix. This is a plot of all the correctly, and incorrectly classified predictions. This allows us to determine metrics such as the number of false negatives, or the number of times the model predicted a house was built after 1980, when in fact, it was before. In this case, there were 227 false negatives. From the confusion matrix we can see the model is fairly well balanced, and not fooled particularly more by either false negatives or positives.\n\n\naccuracy metrics\nimport matplotlib as plt\n\nprint(f'Modle Accuracy: {round(metrics.accuracy_score(y_test, pred), 3)*100}%')\ncm = metrics.confusion_matrix(y_test, pred)\ndisp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm)\ndisp.plot()\n\n\nModle Accuracy: 90.7%\n\n\n\n\n\nconfusion matrix and accuracies\n\n\n\n\n\n\nShow the code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\nX_train, X_test, y_train, y_test = train_test_split(df.drop('before1980', axis=1), df.before1980, test_size=.34, random_state=76)\n\nX_train['sprice'].head(10)\n\n\n18275      620000\n17932      714000\n5121       244500\n12314       98000\n790      17113000\n9632       432500\n11472      485000\n19039      724500\n3810       185700\n16059      702500\nName: sprice, dtype: int64",
+    "text": "Model Evaluation\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\nThere are two measures of accuracy shown below, one numeric and one graphical. The accuracy of 90.3% shown is a simple ratio between the number of correct predictions to the total number of test cases. This means, of all the test cases the model correctly classified 90% of them. Following this, is a graph known as a confusion matrix. This is a plot of all the correctly, and incorrectly classified predictions. This allows us to determine metrics such as the number of false negatives, or the number of times the model predicted a house was built after 1980, when in fact, it was before. In this case, there were 227 false negatives. From the confusion matrix we can see the model is fairly well balanced, and not fooled particularly more by either false negatives or positives.\n\n\naccuracy metrics\nimport matplotlib as plt\n\nprint(f'Modle Accuracy: {round(metrics.accuracy_score(y_test, pred), 3)*100}%')\ncm = metrics.confusion_matrix(y_test, pred)\ndisp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm)\ndisp.plot()\n\n\nModle Accuracy: 90.3%\n\n\n\n\n\nconfusion matrix and accuracies\n\n\n\n\n\n\nShow the code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\nX_train, X_test, y_train, y_test = train_test_split(df.drop('before1980', axis=1), df.before1980, test_size=.34, random_state=76)\n\nX_train['sprice'].head(10)\n\n\n18275      620000\n17932      714000\n5121       244500\n12314       98000\n790      17113000\n9632       432500\n11472      485000\n19039      724500\n3810       185700\n16059      702500\nName: sprice, dtype: int64",
     "crumbs": [
       "DS250 Projects",
       "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html",
+    "href": "Projects/project2.html",
+    "title": "Client Report - Late Flights",
+    "section": "",
+    "text": "The following analysis focuses on delays experienced by seven different U.S. airports. Major factors that influence delays include location, weather, and time of the year. It is clear to see that certain airport experience more delays than others, and certain airports experience longer delays. I made geographical inferences about airports based on the data behin their latencies.\n\n\nRead project data\n# Initializing pandas dataframe\ndata = \"https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json\"\ndf = pd.read_json(data)\n\n\nHighlight the Questions and Tasks",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#elevator-pitch",
+    "href": "Projects/project2.html#elevator-pitch",
+    "title": "Client Report - Late Flights",
+    "section": "",
+    "text": "The following analysis focuses on delays experienced by seven different U.S. airports. Major factors that influence delays include location, weather, and time of the year. It is clear to see that certain airport experience more delays than others, and certain airports experience longer delays. I made geographical inferences about airports based on the data behin their latencies.\n\n\nRead project data\n# Initializing pandas dataframe\ndata = \"https://raw.githubusercontent.com/byuidatascience/data4missing/master/data-raw/flights_missing/flights_missing.json\"\ndf = pd.read_json(data)\n\n\nHighlight the Questions and Tasks",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#tidying-data",
+    "href": "Projects/project2.html#tidying-data",
+    "title": "Client Report - Late Flights",
+    "section": "Tidying data",
+    "text": "Tidying data\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”)\nThe following formatting code fixes missing values in the dataframe in two ways. First, there are several observations with a missing airport name, so this re-maps all airport_codes to a certain name in order to fill in this missing data.\nNext, it replaces the many “-999” values with “NaN” using a mapped lambda function in order to unify missing values and make it easier to read. In the table below you can see that observation 0 has an ‘NaN’ value under ‘num_of_delays_late_aircraft’, which used to be ‘-999’. Additionally observation 2 used to be missing the airport name, but my code automatically filled it in using the airport_code.\n\n\nRe-format data\n# Data tidying by cleaning null values\nmap_airport = {\n    \"ATL\": \"Atlanta, GA: Hartsfield-Jackson Atlanta International\",\n    \"DEN\": \"Denver, CO: Denver International\",\n    \"IAD\": \"Washington, DC: Dulle International\",\n    \"ORD\": \"Chicago, IL: Chicago O'Hare International\",\n    \"SAN\": \"San Diego, CA: San Diego International\",\n    \"SFO\": \"San Francisco, CA: San Francisco International\",\n    \"SLC\": \"Salt Lake City, UT: Salt Lake City International\"\n}\nnull_map = lambda x: \"NaN\" if x == -999 else x\ndf['airport_name'] = df['airport_code'].map(map_airport)\ndf = df.map(null_map)\n\n\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Showing Null Values’ execution_count=4}\n\ntidy data\n# Table to display NaN values\ndisplay(df.head(3))\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nJanuary\n2005.0\n35048\n1500+\nNaN\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n\n\n1\nDEN\nDenver, CO: Denver International\nJanuary\n2005.0\n12687\n1041\n928\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n\n\n2\nIAD\nWashington, DC: Dulle International\nJanuary\n2005.0\n12381\n414\n1058\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#worst-airport",
+    "href": "Projects/project2.html#worst-airport",
+    "title": "Client Report - Late Flights",
+    "section": "Worst Airport",
+    "text": "Worst Airport\nWhich airport has the worst delays?\nA question able to be answered simply by the bar chart displayed below. It is clear to see that Orlando had the most delays out of the given airports, closely followed by Atlanta. These two airports are far more prone to significant delay than any other airport. I used the simple metric of total delay in minutes. While other airports may experience more delays, they are likely far more minor, such as 30 minutes long, whereas these could be trip-ending delays. This could be due to their size and pure traffic, among other factors such as location, weather, etc. I expect the heavy amount of hurricane type weather experienced in these two locations contributed significantly to larger delays. This is supported further by the table, which shows that Orlando has the longest average delay of 1.13 hours. This being said, the table also shows San Francisco actually has the highest density of delays relative to the amount of air traffic it handles, with Orlando being the next worst.\n\n\nFormatting data\n# Delay info on each airport\ndelays = df[['airport_code', 'minutes_delayed_total', 'num_of_flights_total', 'num_of_delays_total']].groupby('airport_code')\nsum_delays = pd.DataFrame(delays.minutes_delayed_total.sum())\nsum_delays['total_flights'] = delays.num_of_flights_total.sum()\nsum_delays['total_delays'] = delays.num_of_delays_total.sum()\nsum_delays['delay_rate'] = round(sum_delays['total_delays']/sum_delays['total_flights'], 2)\nsum_delays['average_delay'] = round((sum_delays['minutes_delayed_total']/60)/sum_delays['total_delays'], 2)\n\n\n::: {#cell-Q2 chart .cell execution_count=6}\n\nbar chart of delays\n# Bar chart to display which airport has the worst delays\npx.bar(sum_delays['minutes_delayed_total'], labels={\"value\": 'Total Delay in Minutes', \"airport_code\": 'Airport'}).update_traces(showlegend=False) \n\n\n                                                \nWorst Airport\n\n:::\n::: {#cell-Q2 table .cell .tbl-cap-location-top tbl-cap=‘Airport Delays’ execution_count=7}\n\nDelay table\n# Delay info for airports\ndelayData = sum_delays\\\n    .groupby('airport_code')\\\n    .sum()\\\n    .reset_index()\\\n    .head(20)\\\n    .filter([\"airport_code\", \"total_flights\", \"total_delays\", \"delay_rate\", \"average_delay\"])\ndisplay(delayData)\n\n\n\n\n\n\n\n\n\nairport_code\ntotal_flights\ntotal_delays\ndelay_rate\naverage_delay\n\n\n\n\n0\nATL\n4430047\n902443\n0.20\n1.00\n\n\n1\nDEN\n2513974\n468519\n0.19\n0.90\n\n\n2\nIAD\n851571\n168467\n0.20\n1.02\n\n\n3\nORD\n3597588\n830825\n0.23\n1.13\n\n\n4\nSAN\n917862\n175132\n0.19\n0.79\n\n\n5\nSFO\n1630945\n425604\n0.26\n1.04\n\n\n6\nSLC\n1403384\n205160\n0.15\n0.82\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#best-month",
+    "href": "Projects/project2.html#best-month",
+    "title": "Client Report - Late Flights",
+    "section": "Best Month",
+    "text": "Best Month\nWhat is the best month to fly if you want to avoid delays of any length?\nThe following bar chart gives a clear cut answer that November is surprisingly the best month to avoid any delays whatsoever. Notice however that the amount of delay is measured in number of delays, not by the total loss of time. This means that while other months have more delays, they may be less severe.\n\n\nRead and format data\n# Grouping by month\nmonth = df[['airport_code', 'month', 'num_of_delays_total']]\nmonthSum = month.groupby('month').num_of_delays_total.sum().drop('n/a')\n\n\n::: {#cell-Q3 chart .cell execution_count=9}\n\nbar chart of travel months\n# Bar chart to display which months have most delays\npx.bar(monthSum, labels={'month': 'Month', 'value': 'Number of Delays'}).update_layout(xaxis={'categoryorder':'total descending'}).update_traces(showlegend=False, marker_color='yellowgreen') \n\n\n                                                \nBest Month\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#weather-delays",
+    "href": "Projects/project2.html#weather-delays",
+    "title": "Client Report - Late Flights",
+    "section": "Weather Delays",
+    "text": "Weather Delays\nYour job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild)\nThe re-formatted data below makes two significant changes. It replaces null values under delays caused by late aircraft with the average for this column. Next it creates a new column, which is the total number of weather related delays. The original weather column only includes major weather delays, however this column accounts for all delays big and small, by taking delays from the ‘late aircraft’ and ‘nas’ categories.\n\n\nFormatting data\n# Re-calculated Weather Delays\ndf['num_of_delays_late_aircraft'] = df['num_of_delays_late_aircraft'].map(lambda x: 1061 if x == 'NaN' else x)\ndf.head(5)\nmonth_map = {\n  'January': .65,\n  'Febuary': .65,\n  'March': .65,\n  'April': .4,\n  'May': .4,\n  'June': .4,\n  'July': .4,\n  'August': .4,\n  'September': .65,\n  'October': .65,\n  'November': .65,\n  'December': .65\n}\ndf['month_multiplier'] = df['month'].map(month_map)\ndf['total_weather'] = round(df['num_of_delays_weather'] + .3*df['num_of_delays_late_aircraft'] + df['month_multiplier']*df['num_of_delays_nas'])\ndf.head(5)\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\nmonth_multiplier\ntotal_weather\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nJanuary\n2005.0\n35048\n1500+\n1061\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n0.65\n3755.0\n\n\n1\nDEN\nDenver, CO: Denver International\nJanuary\n2005.0\n12687\n1041\n928\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n0.65\n1119.0\n\n\n2\nIAD\nWashington, DC: Dulle International\nJanuary\n2005.0\n12381\n414\n1058\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n0.65\n960.0\n\n\n3\nORD\nChicago, IL: Chicago O'Hare International\nJanuary\n2005.0\n28194\n1197\n2255\n5415\n5\n306\n9178\n88691.0\n160811\n364382.0\n151\n24859\n638894\n0.65\n4502.0\n\n\n4\nSAN\nSan Diego, CA: San Diego International\nJanuary\n2005.0\n7283\n572\n680\n638\n7\n56\n1952\n27436.0\n38445\n21127.0\n218\n4326\n91552\n0.65\n675.0",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#worst-weather",
+    "href": "Projects/project2.html#worst-weather",
+    "title": "Client Report - Late Flights",
+    "section": "Worst Weather",
+    "text": "Worst Weather\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport.\nThe bar chart shown displays the proportion of total flights from an airport that were delayed for any weather reasons, major and minor. As hypothesized above, Orlando has a very high proportion of flights delayed by weather, but it is still topped by San Francisco. Salt Lake City has the smallest proportion of weather related delays, likely due to its far inland location without any severe weather conditions apart from snow in the winter time.\n\n\nRead and format data\n# Weather Delays per airport\nweather = df[['airport_code', 'num_of_flights_total', 'total_weather']]\nweather = weather.groupby('airport_code').agg({'num_of_flights_total':sum, 'total_weather':sum})\nweather['proportion'] = weather['total_weather']*100/weather['num_of_flights_total']\n\n\n::: {#cell-Q5 chart .cell execution_count=12}\n\nbar chart of weather delays\n# Bar chart to display which airports have most weather related delays\npx.bar(weather['proportion'], labels={\"value\": 'Percent Delayed By Weather', \"airport_code\": 'Airport'}).update_traces(showlegend=False, marker_color='slategrey')\n\n\n                                                \nWorst Weather\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "Engine Catalogue",
+    "section": "",
+    "text": "Idea\nThis is the newest version of a reccuring project in my portfolio: a rocket engine catalogue/library. This began as a freshman in high school, when I began playing a game called Kerbal Space Program, a spaceflight simulator in which you design your own rockets to fly to moons, other planets, and beyond. It is a complicated and overwhelming game at first, with many parts to choose from, especially different engines. I decided to use my computer science knowledge to help simplify the choices of engines. I created a catalogue tool where I could record different engines, their efficiencies, thrust, and search for them based on certain parameters. This made it far easier to choose the right engine for the job. Since then, during my college years, I have recreated this project several times, each a variation of the last, while learning new concepts. Most recently, to learn C#, I adapted this project to instead record, sort, and save actual, real world engines. It is a user input program where the user can record actual values from real life, using Object Oriented C#.\n\n\nRepository\nHere is the repository in which I published this project, along with several other small projects during my C# programming with functions class.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "Engine Designer",
+    "section": "",
+    "text": "Idea\nThis is perhaps the most ambitious project I have done to date; one that I have sat on for a while: A simulator web-app, in which any user, with no background knowledge in the workings of a rocket engine, could adjust, or ‘play with’ design sliders and checkboxes, adjusting the nozzle diameter, fuel type, engine cycle etc. As they adjust these parameters, they can see the resulting changes in rocket performance: efficiency and thrust, in real time. Of course, the math behind all of this is quite complcicated, as it quite literally is rocket science. However, I was beyond fascinated by the idea, so I began researching, hours of it. This is my favorite project I have worked on, in fact, I am still working on it, tweaking the equations, and adding prettier styling to the website to this day.\n\n\nWebsite\nHere is the website where you can see changes in rocket performance, and hopefull learn something interesting about rocket engines. I developed this website from scratch through GitHub pages, on my own time… for fun!\n\n\n\nRepository\nIn this public repository you can get a deeper look at the development. You will see a markdown file with all of my research and notes on the equations and assumptions needed for the math.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "Space Research",
+    "section": "",
+    "text": "Purpose\nBelow is an original research paper that was written for my advanced writing and research class as a sophomore in college. It details the benefits of spaceflight, and why it is an important aspect of human development.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "DTE Website",
+    "section": "",
+    "text": "Idea\nThis website was an idea I had since high school, one that became a reality as part of a web development class my first semester of college. The thought was that info on rockets and launch providers was far to spread out and difficult to find, so I took it upon myself to compile a ‘wiki’ of sorts on six major rocket launch providers. The infor includes major rockets, noteable missions, their history, successes, etc. While it may not be as flush with information as company specific websites, it has a good over-arching collection of information. I made the site completely from scratch, coding the html, css, and javascript myself, as well as all of the research.\n\n\nWebsite\nBelow is the website publicly published online through github pages.\n\n\n\nRepository\nThis is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "Hazardous NEO",
+    "section": "",
+    "text": "Idea\nOut of my own curiosity, and in an effort to learn and practice machine learning, I sought to create a model that could predict if a Near Earth Object was ‘potentially hazardous’. I was able to find an online dataset of NEO recorded by NASA, about 10% of which were considered potentially hazardous. This label comes from a multitude of factors, including size, distance from Earth, relative velocity, and more. I endeavored to create my own Machine Learning Classifier to predict if an asteroid would be considered hazardous based on these factors. Ultimately, after testing with both GDBT and Random Forest trees, the latter had better performance with ~93% accuracy. I used techniques such as oversampling the minority class, decreasing the learning rate due to the high number of instances, etc.\n\n\nRepository\nHere is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alex Nielsen - About Me",
+    "section": "",
+    "text": "I am an enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field."
+  },
+  {
+    "objectID": "index.html#computer-science",
+    "href": "index.html#computer-science",
+    "title": "Alex Nielsen - About Me",
+    "section": "Computer Science",
+    "text": "Computer Science\nSince my early education I have been excited about computers; working on them, learning to talk to them, and creating programs that perform legitimately useful fucntions. I have always sought to learn new skills and information, delving deeper into the wide and complicated world of computer science. There is always more to learn, and my curiosity never ends. Since my first ‘Hello World’ program in Lua when I was in the 6th grade, my interest in the industry has only snowballed. In particular, I care about the bare bones function of these magic machines: I like to be in the back end, writing scripts to analyze data, do complex math, or perform server side functions. That said, I am always happy when I’m writing code, whether it is python or html.\nI am particularly intrigued by data science: manipulating dataframes to find and visualize discrete relationships, that shine on unpredicted correlations. As well as the fascinating world of machine learning; Countless model frameworks for classification, regression, content generation, etc. I love learning how these algorithms work, at a very low level of the very math behind a computer’s ability to learn."
+  },
+  {
+    "objectID": "index.html#aerospace",
+    "href": "index.html#aerospace",
+    "title": "Alex Nielsen - About Me",
+    "section": "Aerospace",
+    "text": "Aerospace\nMost of my passion lies in the aerospace industry, in particular, the subset of spaceflight and rocketry. I simply cannot begin to describe my fascination for the science behind rocket propulsion, and space exploration. I endeavor to someday use my skills in computer science, and passion for the field, to further develop our knowledge in spaceflight, and rocket engines. You will notice that a large majority of my own projects, both personal and in school, are related in some way to space exploration."
+  },
+  {
+    "objectID": "Projects/project1.html",
+    "href": "Projects/project1.html",
+    "title": "Client Report - What’s in a Name",
+    "section": "",
+    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#elevator-pitch",
+    "href": "Projects/project1.html#elevator-pitch",
+    "title": "Client Report - What’s in a Name",
+    "section": "",
+    "text": "In the analysis conducted below I explore the implications of naming culture over time. I used filtering and other data manipulation techniques in order to uncover trends in names based on time and culture. I found that certain names naturally rise and fall in popularity. Others are effected by culture directly, such as a religion, or famous film, which can cause a quick popularity spike for particular names.\n\n\nRead and format project data\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#personal-name-historical-use",
+    "href": "Projects/project1.html#personal-name-historical-use",
+    "title": "Client Report - What’s in a Name",
+    "section": "Personal Name Historical Use",
+    "text": "Personal Name Historical Use\nThe following data shows the use of my name ‘Alexander’ within the last ~100 years. Plainly seen in the following chart, which shows the number of children given the name every year between 1910 and 2015, there is a drastic spike upward beginning in the 1980s, and stabalizing since the mid-90s. before 1980, the usage of the name was quite stable with around 500-1000 babies named ‘Alexander’ each year. It grew rapidly over 15 years and over the last 2 decades there have been about 14-16k new ‘Alexanders’ every year.\nThe subsequent table supports the chart with a narrower scope. The table displays the number of children named ‘Alexander’ every 10 years with 3 levels of specificity: children in NC, my home state, in ID, the home of BYUI, and total in the U.S. In the table we can see far more ‘Alexanders’ in NC than ID, and both states follow the trendline sharp increase in the last ~40 years.\n\n\nRead and format data\n# Data formatting code\nalexander = df[(df.name == 'Alexander')]\n\n\n::: {#cell-Q1 chart .cell execution_count=4}\n\npersonal name plot\n# Plotting line chart \nchart = px.line(alexander,\n    x=\"year\", \n    y=\"Total\"\n)\nchart.show()\n\n\n                                                \nAlexander increases overtime\n\n:::\n::: {#cell-Q1 table .cell .tbl-cap-location-top tbl-cap=‘Alexander over the years’ execution_count=5}\n\nAlexander table\n# Name table\nmydat = alexander[(alexander.year%10 == 0)]\\\n    .groupby('year')\\\n    .sum()\\\n    .reset_index()\\\n    .tail(10)\\\n    .filter([\"year\", \"NC\", \"ID\", \"Total\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\nyear\nNC\nID\nTotal\n\n\n\n\n1\n1920\n57.0\n0.0\n1439.0\n\n\n2\n1930\n38.0\n0.0\n824.0\n\n\n3\n1940\n44.0\n0.0\n726.0\n\n\n4\n1950\n51.0\n0.0\n1124.0\n\n\n5\n1960\n41.0\n0.0\n1160.0\n\n\n6\n1970\n50.0\n6.0\n2465.0\n\n\n7\n1980\n33.0\n9.0\n2822.5\n\n\n8\n1990\n286.0\n50.0\n11522.0\n\n\n9\n2000\n425.0\n72.0\n16690.5\n\n\n10\n2010\n513.0\n81.0\n16178.0\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#age-of-brittany",
+    "href": "Projects/project1.html#age-of-brittany",
+    "title": "Client Report - What’s in a Name",
+    "section": "Age of Brittany",
+    "text": "Age of Brittany\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nThe following bar chart displays the age density of people named Brittany, showing a normal distribution with a central tendency of 34 years old. Given the histogram I would guess that anyone named brittany would be between 24 and 40 years old. Sequentially, I would not guess any ages younger or older than that range.\n\n\nRead and format data\n# Filtering for brittany\nbrit = df.query('name == \"Brittany\"')\nbrit['age'] = 2024-brit['year']\nsumTotal = sum(brit['Total'])\nbrit['density'] = brit['Total']/sumTotal\n\n\n::: {#cell-Q2 chart .cell execution_count=7}\n\nBrittany age bar\n# Charting ages of Brittany\n\nbritChart = px.bar(brit,\n    x='age',\n    y='density')\nbritChart.show()\n\n\n                                                \nAge chart of Brittanys\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#christian-name-trends",
+    "href": "Projects/project1.html#christian-name-trends",
+    "title": "Client Report - What’s in a Name",
+    "section": "Christian Name Trends",
+    "text": "Christian Name Trends\nThe given line graph shows the rise and fall of Christian names over the last century. At the turn of the 20th century, Christian names significantly rose in popularity, with spikes that continued to climb until around the 1950s. After the mid-50s however began a sudden and sharp decline in christian names, which is leveling at an all time low, approaching only small handfuls of names in the early 21st century.\nThe following table compares the number of christian names, specifically Mary, each decade in 3 states: UT, a predominantly Christian state, NC, my home state, and CA, a hub of cultures both foreign and domestic. Despite the cultural differences in each state, all 3 shared very close trends in the use of name Mary, neither seemingly favoring the name over another.\n\n\nRead and format data\n# Filtering for 4 Christian names\nchristian = df.query('name == \"Mary\" or name == \"Martha\" or name == \"Peter\" or name == \"Paul\"')\nchristian['decade'] = christian['year'] - christian['year']%10\n\n\n::: {#cell-Christian Name Line Plot .cell execution_count=9}\n\nline plot for naming trends\n# Line Plot to explain christian name trends\nchristChart = px.line(christian,\n    x='year',\n    y='Total',\n    color='name')\nchristChart.show()\n\n\n                                                \nChristian Names Over Time\n\n:::\n::: {#cell-Mary Table .cell .tbl-cap-location-top tbl-cap=‘The Name Mary Over Time’ execution_count=10}\n\ntable of decade-based naming\n# table of decade-based naming\nmydat = christian.head(1000)\\\n    .groupby('decade')\\\n    .sum()\\\n    .reset_index()\\\n    .head(20)\\\n    .filter([\"decade\", \"UT\", \"NC\", \"CA\", \"Mary\"])\n\ndisplay(mydat)\n\n\n\n\n\n\n\n\n\ndecade\nUT\nNC\nCA\n\n\n\n\n0\n1910\n1953.0\n14445.0\n9061.0\n\n\n1\n1920\n2842.0\n22334.5\n16490.5\n\n\n2\n1930\n2581.0\n19733.5\n16167.5\n\n\n3\n1940\n3750.0\n22064.0\n32244.5\n\n\n4\n1950\n4217.0\n19908.0\n55489.0\n\n\n5\n1960\n3157.0\n13620.0\n36227.0\n\n\n6\n1970\n2748.0\n7503.0\n22087.0\n\n\n7\n1980\n2219.5\n6112.5\n18970.0\n\n\n8\n1990\n1459.0\n5232.0\n18345.0\n\n\n9\n2000\n1279.0\n3616.0\n11403.0\n\n\n10\n2010\n645.0\n1300.0\n4270.0\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#film-effect-on-names",
+    "href": "Projects/project1.html#film-effect-on-names",
+    "title": "Client Report - What’s in a Name",
+    "section": "Film Effect on Names",
+    "text": "Film Effect on Names\nThe graph below shows the use of the name ‘Luke’ overtime, which can be compared to the release date of the famous “Star Wars” films. The very first Star Wars was released in 1977, and the original trilogy continued through 1983. Since then several more films were made between 2001 and 2019. We can see immediately into the late 70s, when the world-wide popular movies was released, there was a sharp increase in the number of children named luke, and continued to rise into the 21st century. However, while it seems fitting that the Star Wars films would cause such a cultural naming shift, I believe other circumstances contributed to the increase. It is clear that movies can have an impact on the names that parents give to children, but this perhaps not to the degree that this chart portrays.\n\n\nRead and format data\n# Include and execute your code here\nluke = df.query('name == \"Luke\"')\n\n\n::: {#cell-Luke Name Line Plot .cell execution_count=12}\n\nline plot for naming trends\n# Line Plot to explore Luke after Star Wars\nlukeChart = px.line(luke,\n    x='year',\n    y='Total')\nlukeChart.show()\n\n\n                                                \nLuke After Star Wars\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
     ]
   },
   {
@@ -298,7 +325,7 @@
     "href": "Projects/project3.html#write-an-sql-query-to-create-a-new-dataframe-about-baseball-players-who-attended-byu-idaho",
     "title": "Client Report - Baseball Relationships",
     "section": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho",
-    "text": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho\nThe new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\nThe formatted table below shows the 2 professional players fround from BYUI. The statistics display the years they played, for which team, and their salary for the given year, in descending order by salary. This gives us insights on the annual salary made by the students over the years. Naturally, the longer a student plays the more they seem to make. We also notice that the player with id ‘lindsma01’ generally made more than ‘stephga01’. This is likely due to the fact that he played about 10 years later, thus inflation and general industry/team growth would have increased this amount naturally.\n\n\nFormat data\n# Creating table\nplayer_q = '''\n    SELECT *\n    FROM collegeplaying\n    WHERE schoolID == \"idbyuid\"\n    '''\n\nresults = pd.read_sql_query(player_q, con)\nbyuiPlayers = results['playerID']\n\nsalary_q = '''\n  SELECT *\n  FROM salaries\n  WHERE playerID == \"stephga01\" or playerID == \"lindsma01\"\n  ORDER BY salary DESC\n  '''\nsalaries = pd.read_sql_query(salary_q, con)\nsalaries['schoolID'] = \"idbyuid\"\nsalary_df = salaries.drop(['lgID', 'ID', 'team_ID'], axis=1)\n\n\n\n\nTable to show BYUI players\n# table\nsalary_df\n\n\n\n\n\n\n\nBYUI Players Table {#cell-Q1-table}\n\n\n\nyearID\nteamID\nplayerID\nsalary\nschoolID\n\n\n\n\n0\n2014\nCHA\nlindsma01\n4000000.0\nidbyuid\n\n\n1\n2012\nBAL\nlindsma01\n3600000.0\nidbyuid\n\n\n2\n2011\nCOL\nlindsma01\n2800000.0\nidbyuid\n\n\n3\n2013\nCHA\nlindsma01\n2300000.0\nidbyuid\n\n\n4\n2010\nHOU\nlindsma01\n1625000.0\nidbyuid\n\n\n5\n2001\nSLN\nstephga01\n1025000.0\nidbyuid\n\n\n6\n2002\nSLN\nstephga01\n900000.0\nidbyuid\n\n\n7\n2003\nSLN\nstephga01\n800000.0\nidbyuid\n\n\n8\n2000\nSLN\nstephga01\n550000.0\nidbyuid\n\n\n9\n2009\nFLO\nlindsma01\n410000.0\nidbyuid\n\n\n10\n2008\nFLO\nlindsma01\n395000.0\nidbyuid\n\n\n11\n2007\nFLO\nlindsma01\n380000.0\nidbyuid\n\n\n12\n1999\nSLN\nstephga01\n215000.0\nidbyuid\n\n\n13\n1998\nPHI\nstephga01\n185000.0\nidbyuid\n\n\n14\n1997\nPHI\nstephga01\n150000.0\nidbyuid",
+    "text": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho\nThe new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\nThe formatted table below shows the 2 professional players fround from BYUI. The statistics display the years they played, for which team, and their salary for the given year, in descending order by salary. This gives us insights on the annual salary made by the students over the years. Naturally, the longer a student plays the more they seem to make. We also notice that the player with id ‘lindsma01’ generally made more than ‘stephga01’. This is likely due to the fact that he played about 10 years later, thus inflation and general industry/team growth would have increased this amount naturally.\n\n\nFormat data\n# Creating table\nplayer_q = '''\n    SELECT *\n    FROM collegeplaying\n    WHERE schoolID == \"idbyuid\"\n    '''\n\nresults = pd.read_sql_query(player_q, con)\nbyuiPlayers = results['playerID']\n\nsalary_q = '''\n  SELECT *\n  FROM salaries\n  WHERE playerID == \"stephga01\" or playerID == \"lindsma01\"\n  ORDER BY salary DESC\n  '''\nsalaries = pd.read_sql_query(salary_q, con)\nsalaries['schoolID'] = \"idbyuid\"\nsalary_df = salaries.drop(['lgID', 'ID', 'team_ID'], axis=1)\n\n\n\n\nTable to show BYUI players\n# table\nsalary_df\n\n\n\n\n\n\nBYUI Players Table {#cell-Q1-table}\n\n\n\nyearID\nteamID\nplayerID\nsalary\nschoolID\n\n\n\n\n0\n2014\nCHA\nlindsma01\n4000000.0\nidbyuid\n\n\n1\n2012\nBAL\nlindsma01\n3600000.0\nidbyuid\n\n\n2\n2011\nCOL\nlindsma01\n2800000.0\nidbyuid\n\n\n3\n2013\nCHA\nlindsma01\n2300000.0\nidbyuid\n\n\n4\n2010\nHOU\nlindsma01\n1625000.0\nidbyuid\n\n\n5\n2001\nSLN\nstephga01\n1025000.0\nidbyuid\n\n\n6\n2002\nSLN\nstephga01\n900000.0\nidbyuid\n\n\n7\n2003\nSLN\nstephga01\n800000.0\nidbyuid\n\n\n8\n2000\nSLN\nstephga01\n550000.0\nidbyuid\n\n\n9\n2009\nFLO\nlindsma01\n410000.0\nidbyuid\n\n\n10\n2008\nFLO\nlindsma01\n395000.0\nidbyuid\n\n\n11\n2007\nFLO\nlindsma01\n380000.0\nidbyuid\n\n\n12\n1999\nSLN\nstephga01\n215000.0\nidbyuid\n\n\n13\n1998\nPHI\nstephga01\n185000.0\nidbyuid\n\n\n14\n1997\nPHI\nstephga01\n150000.0\nidbyuid",
     "crumbs": [
       "DS250 Projects",
       "Project 3"
@@ -309,7 +336,7 @@
     "href": "Projects/project3.html#calculate-batting-average",
     "title": "Client Report - Baseball Relationships",
     "section": "Calculate Batting Average",
-    "text": "Calculate Batting Average\nThe following three tables show batting percentage statistics in different forms and gives us insights into historical batting accuracy. In order to create these tables I needed to group the stats by playerID and create a batting percentage column from the ‘at bats’ and ‘hits’ columns.\n\n\nFormat data\n# Table creation\nbatting_q = '''\n  SELECT * \n  FROM batting\n  WHERE ab &gt;= 1\n  '''\nbatting_df = pd.read_sql_query(batting_q, con)\nbatting = batting_df[['playerID', 'yearID', 'AB', 'H']]\nbatting['bat%'] = 100*round(batting['H']/batting['AB'], 4)\nbatting = batting.sort_values('bat%', ascending=False)\n\n\nThis first table simply shows the top 5 batting percentages ever recorded. It makes sense to see that all 5 are people who only had 1 or 2 at bats, and thus easily managed a 100% batting percentage.\n::: {#cell-Q2-table A .cell .tbl-cap-location-top tbl-cap=‘Highest bat% table’ execution_count=6}\n\nHighest bat% table\n# Batting % Table\ndisplay(batting.head(5).sort_values('playerID'))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n41947\nacklefr01\n1964\n1\n1\n100.0\n\n\n87881\nhollade01\n2017\n1\n1\n100.0\n\n\n68685\nmagnami01\n1998\n2\n2\n100.0\n\n\n39731\nrushbo01\n1960\n1\n1\n100.0\n\n\n74203\nvalvejo01\n2003\n1\n1\n100.0\n\n\n\n\n\n\n\n:::\nThe next table becomes somewhat more realistic, as it filters any player who had less than 10 at bats for the given year. Still, these players only had a handful of at bats, and thus easily achieved a very high hitting percentage.\n::: {#cell-Q2-table B .cell .tbl-cap-location-top tbl-cap=‘Best batter with 10+ AB’ execution_count=7}\n\nBest batters after 10\n# Batting % after 10 Table\nbatting_10 = batting.drop(batting[batting['AB']&lt;10].index)\ndisplay(batting_10.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n50119\nnymanny01\n1974\n14\n9\n64.29\n\n\n83515\ncarsoma01\n2013\n11\n7\n63.64\n\n\n12012\naltizda01\n1910\n10\n6\n60.00\n\n\n50649\njohnsde01\n1975\n10\n6\n60.00\n\n\n32819\nsilvech01\n1948\n14\n8\n57.14\n\n\n\n\n\n\n\n:::\nThe final table shown is by far the most fascinating. This summed every player’s at bats in order to find the highest career batting percentage in the MLB. It only checks players with at least 100 career at bats, and results in Ty Cobb having the highest all time batting average at 36.6%.\n::: {#cell-Q2-table C .cell .tbl-cap-location-top tbl-cap=‘Best batter career’ execution_count=8}\n\nBest career batters\n# Batting % after career Table\nbatting_career = batting.groupby(['playerID'])[['AB', 'H']].sum().reset_index()\nbatting_career['bat%'] = 100*round(batting_career['H']/batting_career['AB'], 4)\nbatting_career = batting_career.drop(batting_career[batting_career['AB']&lt;100].index).sort_values('bat%', ascending=False)\ndisplay(batting_career.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nAB\nH\nbat%\n\n\n\n\n2918\ncobbty01\n11436\n4189\n36.63\n\n\n754\nbarnero01\n2391\n860\n35.97\n\n\n7292\nhornsro01\n8173\n2930\n35.85\n\n\n7609\njacksjo01\n4981\n1772\n35.58\n\n\n10616\nmeyerle01\n1443\n513\n35.55\n\n\n\n\n\n\n\n:::",
+    "text": "Calculate Batting Average\nThe following three tables show batting percentage statistics in different forms and gives us insights into historical batting accuracy. In order to create these tables I needed to group the stats by playerID and create a batting percentage column from the ‘at bats’ and ‘hits’ columns.\n\n\nFormat data\n# Table creation\nbatting_q = '''\n  SELECT * \n  FROM batting\n  WHERE ab &gt;= 1\n  '''\nbatting_df = pd.read_sql_query(batting_q, con)\nbatting = batting_df[['playerID', 'yearID', 'AB', 'H']]\nbatting['bat%'] = 100*round(batting['H']/batting['AB'], 4)\nbatting = batting.sort_values('bat%', ascending=False)\n\n\nThis first table simply shows the top 5 batting percentages ever recorded. It makes sense to see that all 5 are people who only had 1 or 2 at bats, and thus easily managed a 100% batting percentage.\n::: {#cell-Q2-table A .cell .tbl-cap-location-top tbl-cap=‘Highest bat% table’ execution_count=6}\n\nHighest bat% table\n# Batting % Table\ndisplay(batting.head(5).sort_values('playerID'))\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n41947\nacklefr01\n1964\n1\n1\n100.0\n\n\n87881\nhollade01\n2017\n1\n1\n100.0\n\n\n68685\nmagnami01\n1998\n2\n2\n100.0\n\n\n39731\nrushbo01\n1960\n1\n1\n100.0\n\n\n74203\nvalvejo01\n2003\n1\n1\n100.0\n\n\n\n\n\n\n:::\nThe next table becomes somewhat more realistic, as it filters any player who had less than 10 at bats for the given year. Still, these players only had a handful of at bats, and thus easily achieved a very high hitting percentage.\n::: {#cell-Q2-table B .cell .tbl-cap-location-top tbl-cap=‘Best batter with 10+ AB’ execution_count=7}\n\nBest batters after 10\n# Batting % after 10 Table\nbatting_10 = batting.drop(batting[batting['AB']&lt;10].index)\ndisplay(batting_10.head(5))\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n50119\nnymanny01\n1974\n14\n9\n64.29\n\n\n83515\ncarsoma01\n2013\n11\n7\n63.64\n\n\n12012\naltizda01\n1910\n10\n6\n60.00\n\n\n50649\njohnsde01\n1975\n10\n6\n60.00\n\n\n32819\nsilvech01\n1948\n14\n8\n57.14\n\n\n\n\n\n\n:::\nThe final table shown is by far the most fascinating. This summed every player’s at bats in order to find the highest career batting percentage in the MLB. It only checks players with at least 100 career at bats, and results in Ty Cobb having the highest all time batting average at 36.6%.\n::: {#cell-Q2-table C .cell .tbl-cap-location-top tbl-cap=‘Best batter career’ execution_count=8}\n\nBest career batters\n# Batting % after career Table\nbatting_career = batting.groupby(['playerID'])[['AB', 'H']].sum().reset_index()\nbatting_career['bat%'] = 100*round(batting_career['H']/batting_career['AB'], 4)\nbatting_career = batting_career.drop(batting_career[batting_career['AB']&lt;100].index).sort_values('bat%', ascending=False)\ndisplay(batting_career.head(5))\n\n\n\n\n\n\n\n\n\nplayerID\nAB\nH\nbat%\n\n\n\n\n2918\ncobbty01\n11436\n4189\n36.63\n\n\n754\nbarnero01\n2391\n860\n35.97\n\n\n7292\nhornsro01\n8173\n2930\n35.85\n\n\n7609\njacksjo01\n4981\n1772\n35.58\n\n\n10616\nmeyerle01\n1443\n513\n35.55\n\n\n\n\n\n\n:::",
     "crumbs": [
       "DS250 Projects",
       "Project 3"
@@ -364,7 +391,7 @@
     "href": "Projects/project5.html#data-cleaning",
     "title": "Client Report - The War with Star Wars",
     "section": "Data Cleaning",
-    "text": "Data Cleaning\nClean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made\nThis is where much of the magic happens in this project; The first dataframe is the original, unaltered data from the server. Following is the fully engineered dataframe that the machine learning model uses as input. After the columns were renamed, I replaced all yes/no, true/false, etc. values with simple 1s and 0s. I also remapped categorical with an order, such as age, with integers to represent a given range. Finally, with the remaining, unordered categorical features, I used one-hot encoding. The result is a dataframe that a machine learning model can easily understand, interpret, and is compatible with the model’s math.\n\n\nRead and format data\n# Include and execute your code here\nclean_df.replace(('Yes', 'Star Wars: Episode I  The Phantom Menace', 'Star Wars: Episode II  Attack of the Clones', 'Star Wars: Episode III  Revenge of the Sith', 'Star Wars: Episode IV  A New Hope', 'Star Wars: Episode V The Empire Strikes Back', 'Star Wars: Episode VI Return of the Jedi'), (1), inplace=True)\n\nclean_df.replace(('Very favorably', 'Somewhat favorably', 'Neither favorably nor unfavorably (neutral)', 'Somewhat unfavorably', 'Very unfavorably', 'Unfamiliar (N/A)'), (5, 4, 3, 2, 1, 0), inplace=True)\n\nclean_df.replace('No', 0, inplace=True)\nclean_df.age = clean_df.age.map({'0': 0, '18-29': 1, '30-44': 2, '45-60': 3, '&gt; 60': 4})\nclean_df.education = clean_df.education.map({'Less than hih school degree': 1, 'High school degree': 2, 'Some college or Associate degree': 3, 'Bachelor degree': 4, 'Graduate degree': 5})\n\ntarget_df = clean_df\ntarget_df.income = clean_df.income.map({'$0 - $24,999': 0, '$25,000 - $49,999': 0, '$50,000 - $99,999': 1, '$100,000 - $149,999': 1, '$150,000+': 1})\n\ntarget_df = target_df.fillna(0)\n\nfiltered_df = target_df[clean_df['watched_star_wars'] == 1].drop('watched_star_wars', axis=1)\n\nfinal_df = pd.get_dummies(filtered_df, columns=['solo_shot', 'location', 'gender'])\n\nindex = final_df[(final_df['solo_shot_0'] == 1) | (final_df['location_0'] == 1) | (final_df['gender_0'] == 1)].index\nfinal_df.drop(index, inplace=True)\nfinal_df.drop(['gender_0', 'location_0', 'solo_shot_0'], axis=1, inplace=True)\n\nfinal_df.replace((False, True), (0, 1), inplace=True)\n\n\n\n\nEngineered Dataframe\ndisplay(df.head(5))\ndisplay(final_df.head(5))\n\n\n\n\n\n\n\n\n\n\nRespondentID\nHave you seen any of the 6 films in the Star Wars franchise?\nDo you consider yourself to be a fan of the Star Wars film franchise?\nWhich of the following Star Wars films have you seen? Please select all that apply.\nUnnamed: 4\nUnnamed: 5\nUnnamed: 6\nUnnamed: 7\nUnnamed: 8\nPlease rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.\n...\nUnnamed: 28\nWhich character shot first?\nAre you familiar with the Expanded Universe?\nDo you consider yourself to be a fan of the Expanded Universe?Œæ\nDo you consider yourself to be a fan of the Star Trek franchise?\nGender\nAge\nHousehold Income\nEducation\nLocation (Census Region)\n\n\n\n\n0\nNaN\nResponse\nResponse\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\nStar Wars: Episode I The Phantom Menace\n...\nYoda\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\n\n\n1\n3.292880e+09\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n3\n...\nVery favorably\nI don't understand this question\nYes\nNo\nNo\nMale\n18-29\nNaN\nHigh school degree\nSouth Atlantic\n\n\n2\n3.292880e+09\nNo\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nYes\nMale\n18-29\n$0 - $24,999\nBachelor degree\nWest South Central\n\n\n3\n3.292765e+09\nYes\nNo\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nNaN\nNaN\nNaN\n1\n...\nUnfamiliar (N/A)\nI don't understand this question\nNo\nNaN\nNo\nMale\n18-29\n$0 - $24,999\nHigh school degree\nWest North Central\n\n\n4\n3.292763e+09\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n5\n...\nVery favorably\nI don't understand this question\nNo\nNaN\nYes\nMale\n18-29\n$100,000 - $149,999\nSome college or Associate degree\nWest North Central\n\n\n\n\n5 rows × 38 columns\n\n\nOld Vs New DF\n\n\n\n\n\n\n\n\n\n\nID\nfan\nphantom\nclones\nrevenge\nhope\nempire\njedi\nfirst\nsecond\n...\nlocation_East South Central\nlocation_Middle Atlantic\nlocation_Mountain\nlocation_New England\nlocation_Pacific\nlocation_South Atlantic\nlocation_West North Central\nlocation_West South Central\ngender_Female\ngender_Male\n\n\n\n\n1\n3.292880e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n3\n2\n...\n0\n0\n0\n0\n0\n1\n0\n0\n0\n1\n\n\n3\n3.292765e+09\n0.0\n1.0\n1.0\n1.0\n0.0\n0.0\n0.0\n1\n2\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n4\n3.292763e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n5\n6\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n5\n3.292731e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n5\n4\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n6\n3.292719e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1\n4\n...\n0\n1\n0\n0\n0\n0\n0\n0\n0\n1\n\n\n\n\n5 rows × 48 columns",
+    "text": "Data Cleaning\nClean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made\nThis is where much of the magic happens in this project; The first dataframe is the original, unaltered data from the server. Following is the fully engineered dataframe that the machine learning model uses as input. After the columns were renamed, I replaced all yes/no, true/false, etc. values with simple 1s and 0s. I also remapped categorical with an order, such as age, with integers to represent a given range. Finally, with the remaining, unordered categorical features, I used one-hot encoding. The result is a dataframe that a machine learning model can easily understand, interpret, and is compatible with the model’s math.\n\n\nRead and format data\n# Include and execute your code here\nclean_df.replace(('Yes', 'Star Wars: Episode I  The Phantom Menace', 'Star Wars: Episode II  Attack of the Clones', 'Star Wars: Episode III  Revenge of the Sith', 'Star Wars: Episode IV  A New Hope', 'Star Wars: Episode V The Empire Strikes Back', 'Star Wars: Episode VI Return of the Jedi'), (1), inplace=True)\n\nclean_df.replace(('Very favorably', 'Somewhat favorably', 'Neither favorably nor unfavorably (neutral)', 'Somewhat unfavorably', 'Very unfavorably', 'Unfamiliar (N/A)'), (5, 4, 3, 2, 1, 0), inplace=True)\n\nclean_df.replace('No', 0, inplace=True)\nclean_df.age = clean_df.age.map({'0': 0, '18-29': 1, '30-44': 2, '45-60': 3, '&gt; 60': 4})\nclean_df.education = clean_df.education.map({'Less than hih school degree': 1, 'High school degree': 2, 'Some college or Associate degree': 3, 'Bachelor degree': 4, 'Graduate degree': 5})\n\ntarget_df = clean_df\ntarget_df.income = clean_df.income.map({'$0 - $24,999': 0, '$25,000 - $49,999': 0, '$50,000 - $99,999': 1, '$100,000 - $149,999': 1, '$150,000+': 1})\n\ntarget_df = target_df.fillna(0)\n\nfiltered_df = target_df[clean_df['watched_star_wars'] == 1].drop('watched_star_wars', axis=1)\n\nfinal_df = pd.get_dummies(filtered_df, columns=['solo_shot', 'location', 'gender'])\n\nindex = final_df[(final_df['solo_shot_0'] == 1) | (final_df['location_0'] == 1) | (final_df['gender_0'] == 1)].index\nfinal_df.drop(index, inplace=True)\nfinal_df.drop(['gender_0', 'location_0', 'solo_shot_0'], axis=1, inplace=True)\n\nfinal_df.replace((False, True), (0, 1), inplace=True)\n\n\n\n\nEngineered Dataframe\ndisplay(df.head(5))\ndisplay(final_df.head(5))\n\n\n\n\n\n\n\n\n\nRespondentID\nHave you seen any of the 6 films in the Star Wars franchise?\nDo you consider yourself to be a fan of the Star Wars film franchise?\nWhich of the following Star Wars films have you seen? Please select all that apply.\nUnnamed: 4\nUnnamed: 5\nUnnamed: 6\nUnnamed: 7\nUnnamed: 8\nPlease rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.\n...\nUnnamed: 28\nWhich character shot first?\nAre you familiar with the Expanded Universe?\nDo you consider yourself to be a fan of the Expanded Universe?Œæ\nDo you consider yourself to be a fan of the Star Trek franchise?\nGender\nAge\nHousehold Income\nEducation\nLocation (Census Region)\n\n\n\n\n0\nNaN\nResponse\nResponse\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\nStar Wars: Episode I The Phantom Menace\n...\nYoda\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\nResponse\n\n\n1\n3.292880e+09\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n3\n...\nVery favorably\nI don't understand this question\nYes\nNo\nNo\nMale\n18-29\nNaN\nHigh school degree\nSouth Atlantic\n\n\n2\n3.292880e+09\nNo\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n...\nNaN\nNaN\nNaN\nNaN\nYes\nMale\n18-29\n$0 - $24,999\nBachelor degree\nWest South Central\n\n\n3\n3.292765e+09\nYes\nNo\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nNaN\nNaN\nNaN\n1\n...\nUnfamiliar (N/A)\nI don't understand this question\nNo\nNaN\nNo\nMale\n18-29\n$0 - $24,999\nHigh school degree\nWest North Central\n\n\n4\n3.292763e+09\nYes\nYes\nStar Wars: Episode I The Phantom Menace\nStar Wars: Episode II Attack of the Clones\nStar Wars: Episode III Revenge of the Sith\nStar Wars: Episode IV A New Hope\nStar Wars: Episode V The Empire Strikes Back\nStar Wars: Episode VI Return of the Jedi\n5\n...\nVery favorably\nI don't understand this question\nNo\nNaN\nYes\nMale\n18-29\n$100,000 - $149,999\nSome college or Associate degree\nWest North Central\n\n\n\n\n5 rows × 38 columns\n\nOld Vs New DF\n\n\n\n\n\n\n\n\n\nID\nfan\nphantom\nclones\nrevenge\nhope\nempire\njedi\nfirst\nsecond\n...\nlocation_East South Central\nlocation_Middle Atlantic\nlocation_Mountain\nlocation_New England\nlocation_Pacific\nlocation_South Atlantic\nlocation_West North Central\nlocation_West South Central\ngender_Female\ngender_Male\n\n\n\n\n1\n3.292880e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n3\n2\n...\n0\n0\n0\n0\n0\n1\n0\n0\n0\n1\n\n\n3\n3.292765e+09\n0.0\n1.0\n1.0\n1.0\n0.0\n0.0\n0.0\n1\n2\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n4\n3.292763e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n5\n6\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n5\n3.292731e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n5\n4\n...\n0\n0\n0\n0\n0\n0\n1\n0\n0\n1\n\n\n6\n3.292719e+09\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1.0\n1\n4\n...\n0\n1\n0\n0\n0\n0\n0\n0\n0\n1\n\n\n\n\n5 rows × 48 columns",
     "crumbs": [
       "DS250 Projects",
       "Project 5"
@@ -386,45 +413,11 @@
     "href": "Projects/project5.html#machine-learning",
     "title": "Client Report - The War with Star Wars",
     "section": "Machine Learning",
-    "text": "Machine Learning\nBuild a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy\nIn the code below I created a Gradient Boosted Decision Tree classifier model to predict if a person makes at least 50k per year given their responses to the star wars survey. After some tweaking and testing other models, the best accuracy achieved was about 64%. Naturally, this is not very high, but it is about what I had expected; First the survey format was not very good data to be used in machine learning, and it took a great deal of tailoring and formatting to work properly. Second, the data is far too small: less than 1000 people were surveyed, and after filtering and fixing the data, only 818 people were left as input. This leaves just over 100 ‘test’ cases, which is not enough to accurately train or test the model properly. One parameter that did make a significant difference, was the learning rate. Because of the small size of the dataset, increasing the learning rate from .1 to .2 increased the accuracy by about 10%. Even so, this model is only accuracy about 2/3s of the time.\n\n\nMachine Learning Model\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import GradientBoostingClassifier\nfrom sklearn import metrics\n\nX_train, X_test, y_train, y_test = train_test_split(final_df.drop('income', axis=1), final_df['income'], test_size=.2, random_state=42)\n\nclf = GradientBoostingClassifier(learning_rate=.2)\nclf.fit(X_train, y_train)\n\npred = clf.predict(X_test)\nprint(f'Accuracy Score: {round(metrics.accuracy_score(y_test, pred), 4)*100}%')\nmetrics.confusion_matrix(y_test, pred)\n\n\nAccuracy Score: 62.8%\n\n\narray([[44, 35],\n       [26, 59]])",
+    "text": "Machine Learning\nBuild a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy\nIn the code below I created a Gradient Boosted Decision Tree classifier model to predict if a person makes at least 50k per year given their responses to the star wars survey. After some tweaking and testing other models, the best accuracy achieved was about 64%. Naturally, this is not very high, but it is about what I had expected; First the survey format was not very good data to be used in machine learning, and it took a great deal of tailoring and formatting to work properly. Second, the data is far too small: less than 1000 people were surveyed, and after filtering and fixing the data, only 818 people were left as input. This leaves just over 100 ‘test’ cases, which is not enough to accurately train or test the model properly. One parameter that did make a significant difference, was the learning rate. Because of the small size of the dataset, increasing the learning rate from .1 to .2 increased the accuracy by about 10%. Even so, this model is only accuracy about 2/3s of the time.\n\n\nMachine Learning Model\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import GradientBoostingClassifier\nfrom sklearn import metrics\n\nX_train, X_test, y_train, y_test = train_test_split(final_df.drop('income', axis=1), final_df['income'], test_size=.2, random_state=42)\n\nclf = GradientBoostingClassifier(learning_rate=.2)\nclf.fit(X_train, y_train)\n\npred = clf.predict(X_test)\nprint(f'Accuracy Score: {round(metrics.accuracy_score(y_test, pred), 4)*100}%')\nmetrics.confusion_matrix(y_test, pred)\n\n\nAccuracy Score: 62.8%\n\n\narray([[44, 35],\n       [26, 59]], dtype=int64)",
     "crumbs": [
       "DS250 Projects",
       "Project 5"
     ]
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "Space Research",
-    "section": "",
-    "text": "Purpose\nBelow is an original research paper that was written for my advanced writing and research class as a sophomore in college. It details the benefits of spaceflight, and why it is an important aspect of human development.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "Analyzing Rockets",
-    "section": "",
-    "text": "Idea\nAs a project to practice data analysis and learn the use of pandas and python plotting techniques, I found a database of every rocket launch in history and performed certain trend analysis. My main goal was to identify improvements in rocketry of the decades, as well as analyze the performance of various launch vehicles and providers.\n\n\nRepository\nHere is the public GitHub repository in which I developed this program, and explored the history of rocket launches.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "resume.html",
@@ -453,5 +446,12 @@
     "title": "Alex Nielsen’s Resume",
     "section": "",
     "text": "Joseph Patterson: Current Supervisor: General Manager, Five Guys\nMarie Shepard: Friend: Contract Safety Manager, NASA\nCarl Champagne: Friend: Chief Master Seargent, U.S. Air Force"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Uncomment the entire section to use this template\n\n\n\n\n\n Back to top"
   }
 ]
