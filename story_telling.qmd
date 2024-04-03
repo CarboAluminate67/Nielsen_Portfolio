@@ -1,11 +1,13 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
+title: "Analyzing Rockets"
+subtitle: "Analysis of Historical Rocket Launches"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Idea
+As a project to practice data analysis and learn the use of pandas and python plotting techniques, I found a database of every rocket launch in history and performed certain trend analysis. My main goal was to identify improvements in rocketry of the decades, as well as analyze the performance of various launch vehicles and providers. 
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+# Repository
+Here is the public GitHub repository in which I developed this program, and explored the history of rocket launches. 
 
+[<img src="https://github.com/CarboAluminate67/RocketLaunchAnalysis/blob/main/Plots/ThrustOverYears.png?raw=true">](https://github.com/CarboAluminate67/RocketLaunchAnalysis)

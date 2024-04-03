@@ -64,7 +64,7 @@ website:
         #continue the pattern if you need more inks
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
 
-format:  l
+format:  
   html:
     theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
       light: flatly # more themes can be found [here](https://quarto.org/docs/output-formats/html-themes.html)
