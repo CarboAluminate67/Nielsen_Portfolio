@@ -1,1 +1,13 @@
 /* css styles */
+.level1 a {
+    height: 250px;
+    width: 250px;
+    padding: 25px;
+    background-color: black;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.level1 a:hover {
+    transform: scale(1.5);
+}
