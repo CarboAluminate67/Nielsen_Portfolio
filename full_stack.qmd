@@ -1,11 +1,18 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
+title: "Engine Designer"
+subtitle: "(WIP) Rocket Engine Design Simulator"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Idea
+This is perhaps the most ambitious project I have done to date; one that I have sat on for a while: A simulator web-app, in which any user, with no background knowledge in the workings of a rocket engine, could adjust, or 'play with' design sliders and checkboxes, adjusting the nozzle diameter, fuel type, engine cycle etc. As they adjust these parameters, they can see the resulting changes in rocket performance: efficiency and thrust, in real time. Of course, the math behind all of this is quite complcicated, as it quite literally is rocket science. However, I was beyond fascinated by the idea, so I began researching, hours of it. This is my favorite project I have worked on, in fact, I am still working on it, tweaking the equations, and adding prettier styling to the website to this day. 
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+# Website
+Here is the website where you can see changes in rocket performance, and hopefull learn something interesting about rocket engines. I developed this website from scratch through GitHub pages, on my own time... for fun!
 
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/EngineDesignerWeb.png?raw=true">](https://carboaluminate67.github.io/RocketDesign/)
+
+# Repository
+In this public repository you can get a deeper look at the development. You will see a markdown file with all of my research and notes on the equations and assumptions needed for the math. 
+
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/EngineDesignerRepo.png?raw=true">](https://github.com/CarboAluminate67/RocketDesign)

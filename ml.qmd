@@ -1,11 +1,14 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
+title: "Engine Catalogue"
+subtitle: "Catalogue "
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Idea
+This is the newest version of a reccuring project in my portfolio: a rocket engine catalogue/library. This began as a freshman in high school, when I began playing a game called Kerbal Space Program, a spaceflight simulator in which you design your own rockets to fly to moons, other planets, and beyond. It is a complicated and overwhelming game at first, with many parts to choose from, especially different engines. I decided to use my computer science knowledge to help simplify the choices of engines. I created a catalogue tool where I could record different engines, their efficiencies, thrust, and search for them based on certain parameters. This made it far easier to choose the right engine for the job. Since then, during my college years, I have recreated this project several times, each a variation of the last, while learning new concepts. Most recently, to learn C#, I adapted this project to instead record, sort, and save actual, real world engines. It is a user input program where the user can record actual values from real life, using Object Oriented C#. 
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+# Repository
+Here is the repository in which I published this project, along with several other small projects during my C# programming with functions class. 
+
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/EngineCatalogueRepo.png?raw=true">](https://github.com/CarboAluminate67/cse210/tree/main/final/FinalProject)
 
