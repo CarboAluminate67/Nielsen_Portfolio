@@ -1,13 +1,13 @@
 /* css styles */
 .level1 img {
-    height: 250px;
-    width: 250px;
-    padding: 25px;
-    background-color: black;
-    border-radius: 25px;
-    transition: transform .2s;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    background-color: #375a7f;
+    border-radius: 15px;
+    transition: transform .4s;
 }
 
 .level1 img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
