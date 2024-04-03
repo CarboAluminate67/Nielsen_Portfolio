@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Alex Nielsen’s Resume",
-    "section": "",
-    "text": "Enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field.\n\nLinkedIn\nGitHub |\n\n\n\n\nExpected December 2024 Brigham Young University - Idaho, Rexburg, ID - Data Science Emphasis - 3.93 GPA\n\n\n\n\n\nSeptember 2018 - June 2021 Atkins High School, Winston-Salem, NC\n\nParticipated in statewide competitions for all STEM fields.\nUsed programming knowledge and Agile development to create winning Arduino devices.\nApplied the engineering process to design and test working model airplanes and rockets.\nCollaborated with teammates to solve engineering problems and create innovative technical solutions.\n\n\n\n\nOctober 2021 - Present Five Guys LLC, Winston-Salem, NC\n\nDelegated tasks and supervised productivity, performance, and cooperation.\nPrepared shipment orders and monitored sales data.\nProvided personalized service and addressed internal and external conflicts.\nMaintained hardware with attention to detail.\nLed daily shift meetings to communicate items of interest to staff.\n\n\n\n\n\n\nJoseph Patterson: Current Supervisor: General Manager, Five Guys\nMarie Shepard: Friend: Contract Safety Manager, NASA\nCarl Champagne: Friend: Chief Master Seargent, U.S. Air Force"
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Alex Nielsen’s Resume",
-    "section": "",
-    "text": "Expected December 2024 Brigham Young University - Idaho, Rexburg, ID - Data Science Emphasis - 3.93 GPA"
-  },
-  {
-    "objectID": "resume.html#related-experience",
-    "href": "resume.html#related-experience",
-    "title": "Alex Nielsen’s Resume",
-    "section": "",
-    "text": "September 2018 - June 2021 Atkins High School, Winston-Salem, NC\n\nParticipated in statewide competitions for all STEM fields.\nUsed programming knowledge and Agile development to create winning Arduino devices.\nApplied the engineering process to design and test working model airplanes and rockets.\nCollaborated with teammates to solve engineering problems and create innovative technical solutions.\n\n\n\n\nOctober 2021 - Present Five Guys LLC, Winston-Salem, NC\n\nDelegated tasks and supervised productivity, performance, and cooperation.\nPrepared shipment orders and monitored sales data.\nProvided personalized service and addressed internal and external conflicts.\nMaintained hardware with attention to detail.\nLed daily shift meetings to communicate items of interest to staff."
-  },
-  {
-    "objectID": "resume.html#references",
-    "href": "resume.html#references",
-    "title": "Alex Nielsen’s Resume",
-    "section": "",
-    "text": "Joseph Patterson: Current Supervisor: General Manager, Five Guys\nMarie Shepard: Friend: Contract Safety Manager, NASA\nCarl Champagne: Friend: Chief Master Seargent, U.S. Air Force"
-  },
-  {
-    "objectID": "Templates/DS350_Template.html",
-    "href": "Templates/DS350_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "TODO: Update with template from Paul\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "ml.html",
     "href": "ml.html",
     "title": "about me",
@@ -49,70 +14,53 @@
     "text": "MarkDown Basics"
   },
   {
-    "objectID": "Projects/project4.html",
-    "href": "Projects/project4.html",
-    "title": "Client Report - Machine Learning Prediction",
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "Hazardous NEO",
     "section": "",
-    "text": "In the following practice exercise I created a decision tree machine learning model to classify a home as built before or after 1980. I used different analyzing and evaluation techniques to better design and test a model that can make accurate predictions.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# reading data\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\ndf = df.drop(df[(df.yrbuilt == 2013)].index)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "Idea\nOut of my own curiosity, and in an effort to learn and practice machine learning, I sought to create a model that could predict if a Near Earth Object was ‘potentially hazardous’. I was able to find an online dataset of NEO recorded by NASA, about 10% of which were considered potentially hazardous. This label comes from a multitude of factors, including size, distance from Earth, relative velocity, and more. I endeavored to create my own Machine Learning Classifier to predict if an asteroid would be considered hazardous based on these factors. Ultimately, after testing with both GDBT and Random Forest trees, the latter had better performance with ~93% accuracy. I used techniques such as oversampling the minority class, decreasing the learning rate due to the high number of instances, etc.\n\n\nRepository\nHere is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered.\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Projects/project4.html#elevator-pitch",
-    "href": "Projects/project4.html#elevator-pitch",
-    "title": "Client Report - Machine Learning Prediction",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alex Nielsen - About Me",
     "section": "",
-    "text": "In the following practice exercise I created a decision tree machine learning model to classify a home as built before or after 1980. I used different analyzing and evaluation techniques to better design and test a model that can make accurate predictions.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# reading data\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\ndf = df.drop(df[(df.yrbuilt == 2013)].index)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "I am an enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field."
   },
   {
-    "objectID": "Projects/project4.html#feature-relationships",
-    "href": "Projects/project4.html#feature-relationships",
-    "title": "Client Report - Machine Learning Prediction",
-    "section": "Feature Relationships",
-    "text": "Feature Relationships\nCreate 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.\nThe following figures show potential relationships between the year a house was built, and its square-footage as well as price. Figure A shows the average liveable area of a home built in a given year. We can see that since the mid-80s, homes tend to be a fair amount larger than before. Figure B represents the average price of a home based on the year it was built. Similarly, The average price, although stable at first, has spiked upward after the 80s. In the mid-2000s it has gone up far beyond any other seemingly due to outliers.\n\n\nRead and format data\n# Data formatting\n\narea = {'year': [], 'meanArea': []}\nfor i in df['yrbuilt']:\n  if i not in area['year']:\n    area['year'].append(i)\n    area['meanArea'].append(df.loc[df['yrbuilt'] == i, 'livearea'].mean())\n\narea_df = pd.DataFrame(area).sort_values('year')\narea_df.head(5)\n\nprice = {'year': [], 'meanPrice': []}\nfor i in df['yrbuilt']:\n  if i not in price['year']:\n    price['year'].append(i)\n    price['meanPrice'].append(df.loc[df['yrbuilt'] == i, 'sprice'].mean())\n\nprice_df = pd.DataFrame(price).sort_values('year', ascending=False)\n\n\n::: {#cell-Q1-chart a .cell execution_count=4}\n\nliveable area plot\npx.bar(area_df, x='year', y='meanArea', title='Average Square Footage Over Time')\n\n\n                                                \nfigure a\n\n:::\n::: {#cell-Q1-chart b .cell execution_count=5}\n\nplot example\npx.bar(price_df, x='year', y='meanPrice', title='Average Price Over Time')\n\n\n                                                \nfigure b\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "index.html#computer-science",
+    "href": "index.html#computer-science",
+    "title": "Alex Nielsen - About Me",
+    "section": "Computer Science",
+    "text": "Computer Science\nSince my early education I have been excited about computers; working on them, learning to talk to them, and creating programs that perform legitimately useful fucntions. I have always sought to learn new skills and information, delving deeper into the wide and complicated world of computer science. There is always more to learn, and my curiosity never ends. Since my first ‘Hello World’ program in Lua when I was in the 6th grade, my interest in the industry has only snowballed. In particular, I care about the bare bones function of these magic machines: I like to be in the back end, writing scripts to analyze data, do complex math, or perform server side functions. That said, I am always happy when I’m writing code, whether it is python or html.\nI am particularly intrigued by data science: manipulating dataframes to find and visualize discrete relationships, that shine on unpredicted correlations. As well as the fascinating world of machine learning; Countless model frameworks for classification, regression, content generation, etc. I love learning how these algorithms work, at a very low level of the very math behind a computer’s ability to learn."
   },
   {
-    "objectID": "Projects/project4.html#model-building",
-    "href": "Projects/project4.html#model-building",
-    "title": "Client Report - Machine Learning Prediction",
-    "section": "Model Building",
-    "text": "Model Building\nBuild a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.\nIn the following code I settled on a decision tree classifier algorithm for its simplicity, and because of the number of features in this dataset. I tailored the data by removing bad features (as well as the year-built column), and trained it with an 80%/20% train-test-split. Ultimately, it achieved an accuracy of 90.3%\n\n\nModel Construction\n# Building model\nml_df = df.drop(['parcel', 'yrbuilt'], axis=1)\n\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\n\nX_train, X_test, y_train, y_test = train_test_split(ml_df.drop('before1980', axis=1), ml_df.before1980, test_size=.2, random_state=42)\n\nclf = tree.DecisionTreeClassifier()\nclf.fit(X_train, y_train)\n\npred = clf.predict(X_test)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "index.html#aerospace",
+    "href": "index.html#aerospace",
+    "title": "Alex Nielsen - About Me",
+    "section": "Aerospace",
+    "text": "Aerospace\nMost of my passion lies in the aerospace industry, in particular, the subset of spaceflight and rocketry. I simply cannot begin to describe my fascination for the science behind rocket propulsion, and space exploration. I endeavor to someday use my skills in computer science, and passion for the field, to further develop our knowledge in spaceflight, and rocket engines. You will notice that a large majority of my own projects, both personal and in school, are related in some way to space exploration."
   },
   {
-    "objectID": "Projects/project4.html#significant-features",
-    "href": "Projects/project4.html#significant-features",
-    "title": "Client Report - Machine Learning Prediction",
-    "section": "Significant Features",
-    "text": "Significant Features\nJustify your classification model by discussing the most important features selected by your model. This discussion should include a chart and a description of the features.\nThe two pie charts shown below display the distribution of the most important feature determined by the model. A decision tree model splits the dataset by given features by first determining which feature brings the dataset to the most homogenous state with either all of one class on either side of the tree. While this is never truly possible in one feature, usually some features better split the data than others. In this case, the model found that the number of stories was the most influential feature. The first chart shows that almost every 1 story house in the dataset was built before 1980. Conversely, the majority (about 55%) of homes with more than one story was built after 1980.\n\n\nRead and format data\n# Feature Charts\nstory_df = df[['before1980', 'arcstyle_ONE-STORY']]\none_story = story_df[story_df['arcstyle_ONE-STORY'] == 1]\nmore_stories = story_df[story_df['arcstyle_ONE-STORY'] == 0]\n\none_pie = px.pie(one_story, names='before1980', title='Houses built before 1980 with one story', color='before1980')\none_pie.show()\n\n\n                                                \none story\n\n\n\n\nRead and format data\n# Feature Charts\nmore_pie = px.pie(more_stories, names='before1980', title='Houses built before 1980 with several stories', color='before1980')\nmore_pie.show()\n\n\n                                                \nseveral stories",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
   },
   {
-    "objectID": "Projects/project4.html#model-evaluation",
-    "href": "Projects/project4.html#model-evaluation",
-    "title": "Client Report - Machine Learning Prediction",
-    "section": "Model Evaluation",
-    "text": "Model Evaluation\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\nThere are two measures of accuracy shown below, one numeric and one graphical. The accuracy of 90.3% shown is a simple ratio between the number of correct predictions to the total number of test cases. This means, of all the test cases the model correctly classified 90% of them. Following this, is a graph known as a confusion matrix. This is a plot of all the correctly, and incorrectly classified predictions. This allows us to determine metrics such as the number of false negatives, or the number of times the model predicted a house was built after 1980, when in fact, it was before. In this case, there were 227 false negatives. From the confusion matrix we can see the model is fairly well balanced, and not fooled particularly more by either false negatives or positives.\n\n\naccuracy metrics\nimport matplotlib as plt\n\nprint(f'Modle Accuracy: {round(metrics.accuracy_score(y_test, pred), 3)*100}%')\ncm = metrics.confusion_matrix(y_test, pred)\ndisp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm)\ndisp.plot()\n\n\nModle Accuracy: 90.60000000000001%\n\n\n\n\n\nconfusion matrix and accuracies\n\n\n\n\n\n\nShow the code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\nX_train, X_test, y_train, y_test = train_test_split(df.drop('before1980', axis=1), df.before1980, test_size=.34, random_state=76)\n\nX_train['sprice'].head(10)\n\n\n18275      620000\n17932      714000\n5121       244500\n12314       98000\n790      17113000\n9632       432500\n11472      485000\n19039      724500\n3810       185700\n16059      702500\nName: sprice, dtype: int64",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "DTE Website",
+    "section": "",
+    "text": "Idea\nThis website was an idea I had since high school, one that became a reality as part of a web development class my first semester of college. The thought was that info on rockets and launch providers was far to spread out and difficult to find, so I took it upon myself to compile a ‘wiki’ of sorts on six major rocket launch providers. The infor includes major rockets, noteable missions, their history, successes, etc. While it may not be as flush with information as company specific websites, it has a good over-arching collection of information. I made the site completely from scratch, coding the html, css, and javascript myself, as well as all of the research.\n\n\nWebsite\nBelow is the website publicly published online through github pages.\n\n\n\nRepository\nThis is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Projects/project1.html",
@@ -178,144 +126,6 @@
     "crumbs": [
       "DS250 Projects",
       "Project 1"
-    ]
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Alex Nielsen - About Me",
-    "section": "",
-    "text": "I am an enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field."
-  },
-  {
-    "objectID": "index.html#computer-science",
-    "href": "index.html#computer-science",
-    "title": "Alex Nielsen - About Me",
-    "section": "Computer Science",
-    "text": "Computer Science\nSince my early education I have been excited about computers; working on them, learning to talk to them, and creating programs that perform legitimately useful fucntions. I have always sought to learn new skills and information, delving deeper into the wide and complicated world of computer science. There is always more to learn, and my curiosity never ends. Since my first ‘Hello World’ program in Lua when I was in the 6th grade, my interest in the industry has only snowballed. In particular, I care about the bare bones function of these magic machines: I like to be in the back end, writing scripts to analyze data, do complex math, or perform server side functions. That said, I am always happy when I’m writing code, whether it is python or html.\nI am particularly intrigued by data science: manipulating dataframes to find and visualize discrete relationships, that shine on unpredicted correlations. As well as the fascinating world of machine learning; Countless model frameworks for classification, regression, content generation, etc. I love learning how these algorithms work, at a very low level of the very math behind a computer’s ability to learn."
-  },
-  {
-    "objectID": "index.html#aerospace",
-    "href": "index.html#aerospace",
-    "title": "Alex Nielsen - About Me",
-    "section": "Aerospace",
-    "text": "Aerospace\nMost of my passion lies in the aerospace industry, in particular, the subset of spaceflight and rocketry. I simply cannot begin to describe my fascination for the science behind rocket propulsion, and space exploration. I endeavor to someday use my skills in computer science, and passion for the field, to further develop our knowledge in spaceflight, and rocket engines. You will notice that a large majority of my own projects, both personal and in school, are related in some way to space exploration."
-  },
-  {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
-    "title": "DTE Website",
-    "section": "",
-    "text": "Idea\nThis website was an idea I had since high school, one that became a reality as part of a web development class my first semester of college. The thought was that info on rockets and launch providers was far to spread out and difficult to find, so I took it upon myself to compile a ‘wiki’ of sorts on six major rocket launch providers. The infor includes major rockets, noteable missions, their history, successes, etc. While it may not be as flush with information as company specific websites, it has a good over-arching collection of information. I made the site completely from scratch, coding the html, css, and javascript myself, as well as all of the research.\n\n\nWebsite\nBelow is the website publicly published online through github pages.\nDTE Space\n\n\nRepository\nThis is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork.\nWDD Repo\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "Analyzing Rockets",
-    "section": "",
-    "text": "Idea\nAs a project to practice data analysis and learn the use of pandas and python plotting techniques, I found a database of every rocket launch in history and performed certain trend analysis. My main goal was to identify improvements in rocketry of the decades, as well as analyze the performance of various launch vehicles and providers.\n\n\nRepository\nHere is the public GitHub repository in which I developed this program, and explored the history of rocket launches.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Projects/project3.html",
-    "href": "Projects/project3.html",
-    "title": "Client Report - Baseball Relationships",
-    "section": "",
-    "text": "In the following data analysis I explore the statistics behind Baseball. Baseball is a numbers game, so data exploration like the one below provides numerous insights into the performance of players and teams over time, and why. I was able to discover changes in salary overtime, explore the batting average statistic, and compared the historical skill of two famous MLB teams.\n\n\nRead and format project data\n# Data connection\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sql.connect(sqlite_file)\n\nq = '''\n    SELECT * \n    FROM sqlite_master \n    WHERE type='table'\n    '''\ntable = pd.read_sql_query(q,con)\n# table.filter(['name'])",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#elevator-pitch",
-    "href": "Projects/project3.html#elevator-pitch",
-    "title": "Client Report - Baseball Relationships",
-    "section": "",
-    "text": "In the following data analysis I explore the statistics behind Baseball. Baseball is a numbers game, so data exploration like the one below provides numerous insights into the performance of players and teams over time, and why. I was able to discover changes in salary overtime, explore the batting average statistic, and compared the historical skill of two famous MLB teams.\n\n\nRead and format project data\n# Data connection\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sql.connect(sqlite_file)\n\nq = '''\n    SELECT * \n    FROM sqlite_master \n    WHERE type='table'\n    '''\ntable = pd.read_sql_query(q,con)\n# table.filter(['name'])",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#write-an-sql-query-to-create-a-new-dataframe-about-baseball-players-who-attended-byu-idaho",
-    "href": "Projects/project3.html#write-an-sql-query-to-create-a-new-dataframe-about-baseball-players-who-attended-byu-idaho",
-    "title": "Client Report - Baseball Relationships",
-    "section": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho",
-    "text": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho\nThe new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\nThe formatted table below shows the 2 professional players fround from BYUI. The statistics display the years they played, for which team, and their salary for the given year, in descending order by salary. This gives us insights on the annual salary made by the students over the years. Naturally, the longer a student plays the more they seem to make. We also notice that the player with id ‘lindsma01’ generally made more than ‘stephga01’. This is likely due to the fact that he played about 10 years later, thus inflation and general industry/team growth would have increased this amount naturally.\n\n\nFormat data\n# Creating table\nplayer_q = '''\n    SELECT *\n    FROM collegeplaying\n    WHERE schoolID == \"idbyuid\"\n    '''\n\nresults = pd.read_sql_query(player_q, con)\nbyuiPlayers = results['playerID']\n\nsalary_q = '''\n  SELECT *\n  FROM salaries\n  WHERE playerID == \"stephga01\" or playerID == \"lindsma01\"\n  ORDER BY salary DESC\n  '''\nsalaries = pd.read_sql_query(salary_q, con)\nsalaries['schoolID'] = \"idbyuid\"\nsalary_df = salaries.drop(['lgID', 'ID', 'team_ID'], axis=1)\n\n\n\n\nTable to show BYUI players\n# table\nsalary_df\n\n\n\n\n\n\n\nBYUI Players Table {#cell-Q1-table}\n\n\n\nyearID\nteamID\nplayerID\nsalary\nschoolID\n\n\n\n\n0\n2014\nCHA\nlindsma01\n4000000.0\nidbyuid\n\n\n1\n2012\nBAL\nlindsma01\n3600000.0\nidbyuid\n\n\n2\n2011\nCOL\nlindsma01\n2800000.0\nidbyuid\n\n\n3\n2013\nCHA\nlindsma01\n2300000.0\nidbyuid\n\n\n4\n2010\nHOU\nlindsma01\n1625000.0\nidbyuid\n\n\n5\n2001\nSLN\nstephga01\n1025000.0\nidbyuid\n\n\n6\n2002\nSLN\nstephga01\n900000.0\nidbyuid\n\n\n7\n2003\nSLN\nstephga01\n800000.0\nidbyuid\n\n\n8\n2000\nSLN\nstephga01\n550000.0\nidbyuid\n\n\n9\n2009\nFLO\nlindsma01\n410000.0\nidbyuid\n\n\n10\n2008\nFLO\nlindsma01\n395000.0\nidbyuid\n\n\n11\n2007\nFLO\nlindsma01\n380000.0\nidbyuid\n\n\n12\n1999\nSLN\nstephga01\n215000.0\nidbyuid\n\n\n13\n1998\nPHI\nstephga01\n185000.0\nidbyuid\n\n\n14\n1997\nPHI\nstephga01\n150000.0\nidbyuid",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#calculate-batting-average",
-    "href": "Projects/project3.html#calculate-batting-average",
-    "title": "Client Report - Baseball Relationships",
-    "section": "Calculate Batting Average",
-    "text": "Calculate Batting Average\nThe following three tables show batting percentage statistics in different forms and gives us insights into historical batting accuracy. In order to create these tables I needed to group the stats by playerID and create a batting percentage column from the ‘at bats’ and ‘hits’ columns.\n\n\nFormat data\n# Table creation\nbatting_q = '''\n  SELECT * \n  FROM batting\n  WHERE ab &gt;= 1\n  '''\nbatting_df = pd.read_sql_query(batting_q, con)\nbatting = batting_df[['playerID', 'yearID', 'AB', 'H']]\nbatting['bat%'] = 100*round(batting['H']/batting['AB'], 4)\nbatting = batting.sort_values('bat%', ascending=False)\n\n\nThis first table simply shows the top 5 batting percentages ever recorded. It makes sense to see that all 5 are people who only had 1 or 2 at bats, and thus easily managed a 100% batting percentage.\n::: {#cell-Q2-table A .cell .tbl-cap-location-top tbl-cap=‘Highest bat% table’ execution_count=6}\n\nHighest bat% table\n# Batting % Table\ndisplay(batting.head(5).sort_values('playerID'))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n41947\nacklefr01\n1964\n1\n1\n100.0\n\n\n87881\nhollade01\n2017\n1\n1\n100.0\n\n\n68685\nmagnami01\n1998\n2\n2\n100.0\n\n\n39731\nrushbo01\n1960\n1\n1\n100.0\n\n\n74203\nvalvejo01\n2003\n1\n1\n100.0\n\n\n\n\n\n\n\n:::\nThe next table becomes somewhat more realistic, as it filters any player who had less than 10 at bats for the given year. Still, these players only had a handful of at bats, and thus easily achieved a very high hitting percentage.\n::: {#cell-Q2-table B .cell .tbl-cap-location-top tbl-cap=‘Best batter with 10+ AB’ execution_count=7}\n\nBest batters after 10\n# Batting % after 10 Table\nbatting_10 = batting.drop(batting[batting['AB']&lt;10].index)\ndisplay(batting_10.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n50119\nnymanny01\n1974\n14\n9\n64.29\n\n\n83515\ncarsoma01\n2013\n11\n7\n63.64\n\n\n12012\naltizda01\n1910\n10\n6\n60.00\n\n\n50649\njohnsde01\n1975\n10\n6\n60.00\n\n\n32819\nsilvech01\n1948\n14\n8\n57.14\n\n\n\n\n\n\n\n:::\nThe final table shown is by far the most fascinating. This summed every player’s at bats in order to find the highest career batting percentage in the MLB. It only checks players with at least 100 career at bats, and results in Ty Cobb having the highest all time batting average at 36.6%.\n::: {#cell-Q2-table C .cell .tbl-cap-location-top tbl-cap=‘Best batter career’ execution_count=8}\n\nBest career batters\n# Batting % after career Table\nbatting_career = batting.groupby(['playerID'])[['AB', 'H']].sum().reset_index()\nbatting_career['bat%'] = 100*round(batting_career['H']/batting_career['AB'], 4)\nbatting_career = batting_career.drop(batting_career[batting_career['AB']&lt;100].index).sort_values('bat%', ascending=False)\ndisplay(batting_career.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nAB\nH\nbat%\n\n\n\n\n2918\ncobbty01\n11436\n4189\n36.63\n\n\n754\nbarnero01\n2391\n860\n35.97\n\n\n7292\nhornsro01\n8173\n2930\n35.85\n\n\n7609\njacksjo01\n4981\n1772\n35.58\n\n\n10616\nmeyerle01\n1443\n513\n35.55\n\n\n\n\n\n\n\n:::",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Projects/project3.html#pick-any-two-baseball-teams-and-compare-them-using-a-metric-of-your-choice",
-    "href": "Projects/project3.html#pick-any-two-baseball-teams-and-compare-them-using-a-metric-of-your-choice",
-    "title": "Client Report - Baseball Relationships",
-    "section": "Pick any two baseball teams and compare them using a metric of your choice",
-    "text": "Pick any two baseball teams and compare them using a metric of your choice\nWrite an SQL query to get the data you need, then make a graph using Plotly Express to visualize the comparison. What do you learn?\nThe following line chart compares the number of home runs achieved each year by the Boston Red Sox and New York Yankees. There are several fascinating insights to be found here, firstly I noticed that there is a positive trendline for both teams. This indicates that as the sport has matured, and players’ skill increased overtime, it seems more and more home runs have been occuring over the last century. In terms of actual team comparison, both are relatively even, but New York seems to generally have the upper hand in home runs. What I find most interesting, is the very large gap in the 20s and 30s. Note taht the year of this large spike (1920), happens to be the year that the famous ‘Babe Ruth’ signed with the New York Yankees. Furthermore, we see the number of home runs drastically drop closer to the level of Boston in 1935. Babe Ruth left the Yankees in 1934. It is incredible to see one man seemingly make such a large impact on the performance of a team.\n\n\nFormat data\n# Home Run comparison\nteam_q = '''\n  SELECT *\n  FROM teams\n  WHERE teamID == \"NYA\" or teamID == \"BOS\"\n  '''\nteam_df = pd.read_sql_query(team_q, con)[['teamID', 'HR', 'yearID']]\n\n\n\n\nTeam comparison plot\n# Comparing Boston and New York\npx.line(team_df, x='yearID', y='HR', title='Home runs over time', color='teamID')\n\n\n                                                \nTeam Comparison",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
     ]
   },
   {
@@ -396,6 +206,141 @@
     ]
   },
   {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Uncomment the entire section to use this template\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Templates/DS350_Template.html",
+    "href": "Templates/DS350_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "TODO: Update with template from Paul\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Projects/project4.html",
+    "href": "Projects/project4.html",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "",
+    "text": "In the following practice exercise I created a decision tree machine learning model to classify a home as built before or after 1980. I used different analyzing and evaluation techniques to better design and test a model that can make accurate predictions.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# reading data\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\ndf = df.drop(df[(df.yrbuilt == 2013)].index)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#elevator-pitch",
+    "href": "Projects/project4.html#elevator-pitch",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "",
+    "text": "In the following practice exercise I created a decision tree machine learning model to classify a home as built before or after 1980. I used different analyzing and evaluation techniques to better design and test a model that can make accurate predictions.\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# reading data\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\ndf = df.drop(df[(df.yrbuilt == 2013)].index)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#feature-relationships",
+    "href": "Projects/project4.html#feature-relationships",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "Feature Relationships",
+    "text": "Feature Relationships\nCreate 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.\nThe following figures show potential relationships between the year a house was built, and its square-footage as well as price. Figure A shows the average liveable area of a home built in a given year. We can see that since the mid-80s, homes tend to be a fair amount larger than before. Figure B represents the average price of a home based on the year it was built. Similarly, The average price, although stable at first, has spiked upward after the 80s. In the mid-2000s it has gone up far beyond any other seemingly due to outliers.\n\n\nRead and format data\n# Data formatting\n\narea = {'year': [], 'meanArea': []}\nfor i in df['yrbuilt']:\n  if i not in area['year']:\n    area['year'].append(i)\n    area['meanArea'].append(df.loc[df['yrbuilt'] == i, 'livearea'].mean())\n\narea_df = pd.DataFrame(area).sort_values('year')\narea_df.head(5)\n\nprice = {'year': [], 'meanPrice': []}\nfor i in df['yrbuilt']:\n  if i not in price['year']:\n    price['year'].append(i)\n    price['meanPrice'].append(df.loc[df['yrbuilt'] == i, 'sprice'].mean())\n\nprice_df = pd.DataFrame(price).sort_values('year', ascending=False)\n\n\n::: {#cell-Q1-chart a .cell execution_count=4}\n\nliveable area plot\npx.bar(area_df, x='year', y='meanArea', title='Average Square Footage Over Time')\n\n\n                                                \nfigure a\n\n:::\n::: {#cell-Q1-chart b .cell execution_count=5}\n\nplot example\npx.bar(price_df, x='year', y='meanPrice', title='Average Price Over Time')\n\n\n                                                \nfigure b\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#model-building",
+    "href": "Projects/project4.html#model-building",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "Model Building",
+    "text": "Model Building\nBuild a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.\nIn the following code I settled on a decision tree classifier algorithm for its simplicity, and because of the number of features in this dataset. I tailored the data by removing bad features (as well as the year-built column), and trained it with an 80%/20% train-test-split. Ultimately, it achieved an accuracy of 90.3%\n\n\nModel Construction\n# Building model\nml_df = df.drop(['parcel', 'yrbuilt'], axis=1)\n\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\n\nX_train, X_test, y_train, y_test = train_test_split(ml_df.drop('before1980', axis=1), ml_df.before1980, test_size=.2, random_state=42)\n\nclf = tree.DecisionTreeClassifier()\nclf.fit(X_train, y_train)\n\npred = clf.predict(X_test)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#significant-features",
+    "href": "Projects/project4.html#significant-features",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "Significant Features",
+    "text": "Significant Features\nJustify your classification model by discussing the most important features selected by your model. This discussion should include a chart and a description of the features.\nThe two pie charts shown below display the distribution of the most important feature determined by the model. A decision tree model splits the dataset by given features by first determining which feature brings the dataset to the most homogenous state with either all of one class on either side of the tree. While this is never truly possible in one feature, usually some features better split the data than others. In this case, the model found that the number of stories was the most influential feature. The first chart shows that almost every 1 story house in the dataset was built before 1980. Conversely, the majority (about 55%) of homes with more than one story was built after 1980.\n\n\nRead and format data\n# Feature Charts\nstory_df = df[['before1980', 'arcstyle_ONE-STORY']]\none_story = story_df[story_df['arcstyle_ONE-STORY'] == 1]\nmore_stories = story_df[story_df['arcstyle_ONE-STORY'] == 0]\n\none_pie = px.pie(one_story, names='before1980', title='Houses built before 1980 with one story', color='before1980')\none_pie.show()\n\n\n                                                \none story\n\n\n\n\nRead and format data\n# Feature Charts\nmore_pie = px.pie(more_stories, names='before1980', title='Houses built before 1980 with several stories', color='before1980')\nmore_pie.show()\n\n\n                                                \nseveral stories",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html#model-evaluation",
+    "href": "Projects/project4.html#model-evaluation",
+    "title": "Client Report - Machine Learning Prediction",
+    "section": "Model Evaluation",
+    "text": "Model Evaluation\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\nThere are two measures of accuracy shown below, one numeric and one graphical. The accuracy of 90.3% shown is a simple ratio between the number of correct predictions to the total number of test cases. This means, of all the test cases the model correctly classified 90% of them. Following this, is a graph known as a confusion matrix. This is a plot of all the correctly, and incorrectly classified predictions. This allows us to determine metrics such as the number of false negatives, or the number of times the model predicted a house was built after 1980, when in fact, it was before. In this case, there were 227 false negatives. From the confusion matrix we can see the model is fairly well balanced, and not fooled particularly more by either false negatives or positives.\n\n\naccuracy metrics\nimport matplotlib as plt\n\nprint(f'Modle Accuracy: {round(metrics.accuracy_score(y_test, pred), 3)*100}%')\ncm = metrics.confusion_matrix(y_test, pred)\ndisp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm)\ndisp.plot()\n\n\nModle Accuracy: 90.4%\n\n\n\n\n\nconfusion matrix and accuracies\n\n\n\n\n\n\nShow the code\nfrom sklearn.model_selection import train_test_split\nfrom sklearn import metrics\nfrom sklearn import tree\ndf = pd.read_csv(\"https://raw.githubusercontent.com/byuidatascience/data4dwellings/master/data-raw/dwellings_ml/dwellings_ml.csv\")\nX_train, X_test, y_train, y_test = train_test_split(df.drop('before1980', axis=1), df.before1980, test_size=.34, random_state=76)\n\nX_train['sprice'].head(10)\n\n\n18275      620000\n17932      714000\n5121       244500\n12314       98000\n790      17113000\n9632       432500\n11472      485000\n19039      724500\n3810       185700\n16059      702500\nName: sprice, dtype: int64",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html",
+    "href": "Projects/project3.html",
+    "title": "Client Report - Baseball Relationships",
+    "section": "",
+    "text": "In the following data analysis I explore the statistics behind Baseball. Baseball is a numbers game, so data exploration like the one below provides numerous insights into the performance of players and teams over time, and why. I was able to discover changes in salary overtime, explore the batting average statistic, and compared the historical skill of two famous MLB teams.\n\n\nRead and format project data\n# Data connection\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sql.connect(sqlite_file)\n\nq = '''\n    SELECT * \n    FROM sqlite_master \n    WHERE type='table'\n    '''\ntable = pd.read_sql_query(q,con)\n# table.filter(['name'])",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#elevator-pitch",
+    "href": "Projects/project3.html#elevator-pitch",
+    "title": "Client Report - Baseball Relationships",
+    "section": "",
+    "text": "In the following data analysis I explore the statistics behind Baseball. Baseball is a numbers game, so data exploration like the one below provides numerous insights into the performance of players and teams over time, and why. I was able to discover changes in salary overtime, explore the batting average statistic, and compared the historical skill of two famous MLB teams.\n\n\nRead and format project data\n# Data connection\nsqlite_file = 'lahmansbaseballdb.sqlite'\ncon = sql.connect(sqlite_file)\n\nq = '''\n    SELECT * \n    FROM sqlite_master \n    WHERE type='table'\n    '''\ntable = pd.read_sql_query(q,con)\n# table.filter(['name'])",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#write-an-sql-query-to-create-a-new-dataframe-about-baseball-players-who-attended-byu-idaho",
+    "href": "Projects/project3.html#write-an-sql-query-to-create-a-new-dataframe-about-baseball-players-who-attended-byu-idaho",
+    "title": "Client Report - Baseball Relationships",
+    "section": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho",
+    "text": "Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho\nThe new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\nThe formatted table below shows the 2 professional players fround from BYUI. The statistics display the years they played, for which team, and their salary for the given year, in descending order by salary. This gives us insights on the annual salary made by the students over the years. Naturally, the longer a student plays the more they seem to make. We also notice that the player with id ‘lindsma01’ generally made more than ‘stephga01’. This is likely due to the fact that he played about 10 years later, thus inflation and general industry/team growth would have increased this amount naturally.\n\n\nFormat data\n# Creating table\nplayer_q = '''\n    SELECT *\n    FROM collegeplaying\n    WHERE schoolID == \"idbyuid\"\n    '''\n\nresults = pd.read_sql_query(player_q, con)\nbyuiPlayers = results['playerID']\n\nsalary_q = '''\n  SELECT *\n  FROM salaries\n  WHERE playerID == \"stephga01\" or playerID == \"lindsma01\"\n  ORDER BY salary DESC\n  '''\nsalaries = pd.read_sql_query(salary_q, con)\nsalaries['schoolID'] = \"idbyuid\"\nsalary_df = salaries.drop(['lgID', 'ID', 'team_ID'], axis=1)\n\n\n\n\nTable to show BYUI players\n# table\nsalary_df\n\n\n\n\n\n\n\nBYUI Players Table {#cell-Q1-table}\n\n\n\nyearID\nteamID\nplayerID\nsalary\nschoolID\n\n\n\n\n0\n2014\nCHA\nlindsma01\n4000000.0\nidbyuid\n\n\n1\n2012\nBAL\nlindsma01\n3600000.0\nidbyuid\n\n\n2\n2011\nCOL\nlindsma01\n2800000.0\nidbyuid\n\n\n3\n2013\nCHA\nlindsma01\n2300000.0\nidbyuid\n\n\n4\n2010\nHOU\nlindsma01\n1625000.0\nidbyuid\n\n\n5\n2001\nSLN\nstephga01\n1025000.0\nidbyuid\n\n\n6\n2002\nSLN\nstephga01\n900000.0\nidbyuid\n\n\n7\n2003\nSLN\nstephga01\n800000.0\nidbyuid\n\n\n8\n2000\nSLN\nstephga01\n550000.0\nidbyuid\n\n\n9\n2009\nFLO\nlindsma01\n410000.0\nidbyuid\n\n\n10\n2008\nFLO\nlindsma01\n395000.0\nidbyuid\n\n\n11\n2007\nFLO\nlindsma01\n380000.0\nidbyuid\n\n\n12\n1999\nSLN\nstephga01\n215000.0\nidbyuid\n\n\n13\n1998\nPHI\nstephga01\n185000.0\nidbyuid\n\n\n14\n1997\nPHI\nstephga01\n150000.0\nidbyuid",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#calculate-batting-average",
+    "href": "Projects/project3.html#calculate-batting-average",
+    "title": "Client Report - Baseball Relationships",
+    "section": "Calculate Batting Average",
+    "text": "Calculate Batting Average\nThe following three tables show batting percentage statistics in different forms and gives us insights into historical batting accuracy. In order to create these tables I needed to group the stats by playerID and create a batting percentage column from the ‘at bats’ and ‘hits’ columns.\n\n\nFormat data\n# Table creation\nbatting_q = '''\n  SELECT * \n  FROM batting\n  WHERE ab &gt;= 1\n  '''\nbatting_df = pd.read_sql_query(batting_q, con)\nbatting = batting_df[['playerID', 'yearID', 'AB', 'H']]\nbatting['bat%'] = 100*round(batting['H']/batting['AB'], 4)\nbatting = batting.sort_values('bat%', ascending=False)\n\n\nThis first table simply shows the top 5 batting percentages ever recorded. It makes sense to see that all 5 are people who only had 1 or 2 at bats, and thus easily managed a 100% batting percentage.\n::: {#cell-Q2-table A .cell .tbl-cap-location-top tbl-cap=‘Highest bat% table’ execution_count=6}\n\nHighest bat% table\n# Batting % Table\ndisplay(batting.head(5).sort_values('playerID'))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n41947\nacklefr01\n1964\n1\n1\n100.0\n\n\n87881\nhollade01\n2017\n1\n1\n100.0\n\n\n68685\nmagnami01\n1998\n2\n2\n100.0\n\n\n39731\nrushbo01\n1960\n1\n1\n100.0\n\n\n74203\nvalvejo01\n2003\n1\n1\n100.0\n\n\n\n\n\n\n\n:::\nThe next table becomes somewhat more realistic, as it filters any player who had less than 10 at bats for the given year. Still, these players only had a handful of at bats, and thus easily achieved a very high hitting percentage.\n::: {#cell-Q2-table B .cell .tbl-cap-location-top tbl-cap=‘Best batter with 10+ AB’ execution_count=7}\n\nBest batters after 10\n# Batting % after 10 Table\nbatting_10 = batting.drop(batting[batting['AB']&lt;10].index)\ndisplay(batting_10.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nyearID\nAB\nH\nbat%\n\n\n\n\n50119\nnymanny01\n1974\n14\n9\n64.29\n\n\n83515\ncarsoma01\n2013\n11\n7\n63.64\n\n\n12012\naltizda01\n1910\n10\n6\n60.00\n\n\n50649\njohnsde01\n1975\n10\n6\n60.00\n\n\n32819\nsilvech01\n1948\n14\n8\n57.14\n\n\n\n\n\n\n\n:::\nThe final table shown is by far the most fascinating. This summed every player’s at bats in order to find the highest career batting percentage in the MLB. It only checks players with at least 100 career at bats, and results in Ty Cobb having the highest all time batting average at 36.6%.\n::: {#cell-Q2-table C .cell .tbl-cap-location-top tbl-cap=‘Best batter career’ execution_count=8}\n\nBest career batters\n# Batting % after career Table\nbatting_career = batting.groupby(['playerID'])[['AB', 'H']].sum().reset_index()\nbatting_career['bat%'] = 100*round(batting_career['H']/batting_career['AB'], 4)\nbatting_career = batting_career.drop(batting_career[batting_career['AB']&lt;100].index).sort_values('bat%', ascending=False)\ndisplay(batting_career.head(5))\n\n\n\n\n\n\n\n\n\n\nplayerID\nAB\nH\nbat%\n\n\n\n\n2918\ncobbty01\n11436\n4189\n36.63\n\n\n754\nbarnero01\n2391\n860\n35.97\n\n\n7292\nhornsro01\n8173\n2930\n35.85\n\n\n7609\njacksjo01\n4981\n1772\n35.58\n\n\n10616\nmeyerle01\n1443\n513\n35.55\n\n\n\n\n\n\n\n:::",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#pick-any-two-baseball-teams-and-compare-them-using-a-metric-of-your-choice",
+    "href": "Projects/project3.html#pick-any-two-baseball-teams-and-compare-them-using-a-metric-of-your-choice",
+    "title": "Client Report - Baseball Relationships",
+    "section": "Pick any two baseball teams and compare them using a metric of your choice",
+    "text": "Pick any two baseball teams and compare them using a metric of your choice\nWrite an SQL query to get the data you need, then make a graph using Plotly Express to visualize the comparison. What do you learn?\nThe following line chart compares the number of home runs achieved each year by the Boston Red Sox and New York Yankees. There are several fascinating insights to be found here, firstly I noticed that there is a positive trendline for both teams. This indicates that as the sport has matured, and players’ skill increased overtime, it seems more and more home runs have been occuring over the last century. In terms of actual team comparison, both are relatively even, but New York seems to generally have the upper hand in home runs. What I find most interesting, is the very large gap in the 20s and 30s. Note taht the year of this large spike (1920), happens to be the year that the famous ‘Babe Ruth’ signed with the New York Yankees. Furthermore, we see the number of home runs drastically drop closer to the level of Boston in 1935. Babe Ruth left the Yankees in 1934. It is incredible to see one man seemingly make such a large impact on the performance of a team.\n\n\nFormat data\n# Home Run comparison\nteam_q = '''\n  SELECT *\n  FROM teams\n  WHERE teamID == \"NYA\" or teamID == \"BOS\"\n  '''\nteam_df = pd.read_sql_query(team_q, con)[['teamID', 'HR', 'yearID']]\n\n\n\n\nTeam comparison plot\n# Comparing Boston and New York\npx.line(team_df, x='yearID', y='HR', title='Home runs over time', color='teamID')\n\n\n                                                \nTeam Comparison",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 3"
+    ]
+  },
+  {
     "objectID": "Projects/project5.html",
     "href": "Projects/project5.html",
     "title": "Client Report - The War with Star Wars",
@@ -462,17 +407,72 @@
     ]
   },
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "Hazardous NEO",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
     "section": "",
-    "text": "Idea\nOut of my own curiosity, and in an effort to learn and practice machine learning, I sought to create a model that could predict if a Near Earth Object was ‘potentially hazardous’. I was able to find an online dataset of NEO recorded by NASA, about 10% of which were considered potentially hazardous. This label comes from a multitude of factors, including size, distance from Earth, relative velocity, and more. I endeavored to create my own Machine Learning Classifier to predict if an asteroid would be considered hazardous based on these factors. Ultimately, after testing with both GDBT and Random Forest trees, the latter had better performance with ~93% accuracy. I used techniques such as oversampling the minority class, decreasing the learning rate due to the high number of instances, etc.\n\n\nRepository\nHere is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered.\nNEO Repo\n\n\n\n\n Back to top"
+    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
   },
   {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
     "section": "",
-    "text": "Uncomment the entire section to use this template\n\n\n\n\n\n\n\n Back to top"
+    "text": "What’s in a name\nLate Flights\nBaseball Relationships\nMachine Learning\nThe War With Star Wars",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics\n#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See ?@fig-bill-sizes for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "Analyzing Rockets",
+    "section": "",
+    "text": "Idea\nAs a project to practice data analysis and learn the use of pandas and python plotting techniques, I found a database of every rocket launch in history and performed certain trend analysis. My main goal was to identify improvements in rocketry of the decades, as well as analyze the performance of various launch vehicles and providers.\n\n\nRepository\nHere is the public GitHub repository in which I developed this program, and explored the history of rocket launches.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Alex Nielsen’s Resume",
+    "section": "",
+    "text": "Enthusiastic computer science major with a passion for aerospace and rocketry. Dedicated learner excited to explore the industry. Exceptional work ethic and determined to get my foot into the door of the spaceflight field.\n\nLinkedIn\nGitHub |\n\n\n\n\nExpected December 2024 Brigham Young University - Idaho, Rexburg, ID - Data Science Emphasis - 3.93 GPA\n\n\n\n\n\nSeptember 2018 - June 2021 Atkins High School, Winston-Salem, NC\n\nParticipated in statewide competitions for all STEM fields.\nUsed programming knowledge and Agile development to create winning Arduino devices.\nApplied the engineering process to design and test working model airplanes and rockets.\nCollaborated with teammates to solve engineering problems and create innovative technical solutions.\n\n\n\n\nOctober 2021 - Present Five Guys LLC, Winston-Salem, NC\n\nDelegated tasks and supervised productivity, performance, and cooperation.\nPrepared shipment orders and monitored sales data.\nProvided personalized service and addressed internal and external conflicts.\nMaintained hardware with attention to detail.\nLed daily shift meetings to communicate items of interest to staff.\n\n\n\n\n\n\nJoseph Patterson: Current Supervisor: General Manager, Five Guys\nMarie Shepard: Friend: Contract Safety Manager, NASA\nCarl Champagne: Friend: Chief Master Seargent, U.S. Air Force"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Alex Nielsen’s Resume",
+    "section": "",
+    "text": "Expected December 2024 Brigham Young University - Idaho, Rexburg, ID - Data Science Emphasis - 3.93 GPA"
+  },
+  {
+    "objectID": "resume.html#related-experience",
+    "href": "resume.html#related-experience",
+    "title": "Alex Nielsen’s Resume",
+    "section": "",
+    "text": "September 2018 - June 2021 Atkins High School, Winston-Salem, NC\n\nParticipated in statewide competitions for all STEM fields.\nUsed programming knowledge and Agile development to create winning Arduino devices.\nApplied the engineering process to design and test working model airplanes and rockets.\nCollaborated with teammates to solve engineering problems and create innovative technical solutions.\n\n\n\n\nOctober 2021 - Present Five Guys LLC, Winston-Salem, NC\n\nDelegated tasks and supervised productivity, performance, and cooperation.\nPrepared shipment orders and monitored sales data.\nProvided personalized service and addressed internal and external conflicts.\nMaintained hardware with attention to detail.\nLed daily shift meetings to communicate items of interest to staff."
+  },
+  {
+    "objectID": "resume.html#references",
+    "href": "resume.html#references",
+    "title": "Alex Nielsen’s Resume",
+    "section": "",
+    "text": "Joseph Patterson: Current Supervisor: General Manager, Five Guys\nMarie Shepard: Friend: Contract Safety Manager, NASA\nCarl Champagne: Friend: Chief Master Seargent, U.S. Air Force"
   }
 ]
