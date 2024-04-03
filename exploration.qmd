@@ -10,6 +10,6 @@ Out of my own curiosity, and in an effort to learn and practice machine learning
 # Repository
 Here is the public GitHub repository in which the project was created, using python and sklearn. I even modified user input in order to make predictions on new asteroids that could be discovered. 
 
-[NEO Repo](https://github.com/CarboAluminate67/NearEarthObjects)
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/NEORepo.png?raw=true">](https://github.com/CarboAluminate67/NearEarthObjects)
 
 

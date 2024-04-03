@@ -11,10 +11,10 @@ This website was an idea I had since high school, one that became a reality as p
 
 Below is the website publicly published online through github pages. 
 
-[DTE Space](https://carboaluminate67.github.io/wdd130/space/)
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/DTEspaceicon.png?raw=true">](https://carboaluminate67.github.io/wdd130/space/)
 
 # Repository
 
 This is a backend view of how I created the website, a project that is part of my web development repository. You will also find other small websites and experiments in this repo from other classwork. 
 
-[WDD Repo](https://github.com/CarboAluminate67/wdd130)
+[<img src="https://github.com/CarboAluminate67/Nielsen_Portfolio/blob/main/Images/DTERepo.png?raw=true">](https://github.com/CarboAluminate67/wdd130)
