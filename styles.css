@@ -2,12 +2,12 @@
 .level1 img {
     height: 300px;
     width: 300px;
-    padding: 15px;
-    background-color: #375a7f;
-    border-radius: 15px;
+    padding: 5px;
+    background-color: #1A1B20;
+    border-radius: 10px;
     transition: transform .4s;
 }
 
 .level1 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
